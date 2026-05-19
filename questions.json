@@ -1,0 +1,3002 @@
+[
+  {
+    "id": 2,
+    "categorie": "Langue française",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "",
+    "points": 3,
+    "question": "quelle est la bonne orthographe ? ",
+    "reponses": [
+      "sirose",
+      "cirhose",
+      "cirrhose",
+      "cyrhose"
+    ]
+  },
+  {
+    "id": 3,
+    "categorie": "Répliques célèbres",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "",
+    "points": 3,
+    "question": " - ah si tu connaissais les chevaux comme tu connais les hommes\"   - oui mais j'ai jamais couché avec des chevaux.",
+    "reponses": [
+      "L'homme qui murmurait à l'oreille des chevaux",
+      "Champion",
+      "Les ripoux",
+      "Certains l'aiment chaud"
+    ]
+  },
+  {
+    "id": 4,
+    "categorie": "Répliques célèbres",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "",
+    "points": 2,
+    "question": "if you want a friend, buy yourself a dog",
+    "reponses": [
+      "Beethoven",
+      "Wall street",
+      "Forrest Gump",
+      "Platoon"
+    ]
+  },
+  {
+    "id": 5,
+    "categorie": "Répliques célèbres",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "",
+    "points": 2,
+    "question": "ton ne sent le cul des filles, sauf si elle le demande",
+    "reponses": [
+      "Didier",
+      "Rocco et ses frères",
+      "La cité de la Peur",
+      "Coupez !"
+    ]
+  },
+  {
+    "id": 6,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "",
+    "points": 1,
+    "question": "Combien y avait-il de régions en France métropolitaine avant la réforme ? Combien après ?",
+    "reponses": [
+      "20 > 15",
+      "22 > 13",
+      "23 > 15",
+      "21 > 10"
+    ]
+  },
+  {
+    "id": 7,
+    "categorie": "Jeux Olympiques",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "",
+    "points": 2,
+    "question": "Lequel de ces sports fait son entrée aux JO en 1924 ?",
+    "reponses": [
+      "Pétanque",
+      "Padel",
+      "Surf",
+      "Break dance"
+    ]
+  },
+  {
+    "id": 8,
+    "categorie": "Cinéma",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "il n'apparait pas comme acteur mais on retrouve sa carte d'identité dans le sex shop",
+    "points": 3,
+    "question": "Peut-on voir Alain CHABAT dans le film Dikkenek ?",
+    "reponses": [
+      "oui",
+      "non",
+      "",
+      " "
+    ]
+  },
+  {
+    "id": 9,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "",
+    "points": 1,
+    "question": "Quel événement a déclenché la Première Guerre mondiale ?",
+    "reponses": [
+      "L'invasion de la Belgique",
+      "L'attentat de Sarajevo",
+      "La mobilisation russe",
+      "L'ultimatum austro-hongrois"
+    ]
+  },
+  {
+    "id": 10,
+    "categorie": "Acronymes",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "",
+    "points": 3,
+    "question": "D'où vient le nom des magasins FNAC ? ",
+    "reponses": [
+      "Fédération Nationale d'Achats pour Cadres",
+      "Le créateur s'appelait Mr Fnacarian",
+      "Fabrique Nationale d'Aspirateurs Compacts",
+      "France Numérique Audio Cinéma"
+    ]
+  },
+  {
+    "id": 11,
+    "categorie": "Acronymes",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "",
+    "points": 2,
+    "question": "Que signifie l'abbréviation CRS ? ",
+    "reponses": [
+      "Compagnie de Réserve et de Sécurité",
+      "Corps Républicain de Surveillance",
+      "Corps de Régulation Spéciale",
+      "Compagnie Républicaine de Sécurité"
+    ]
+  },
+  {
+    "id": 12,
+    "categorie": "Architecture",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "La tour Montparnasse compte environ 90 000 m² de bureaux.",
+    "points": 3,
+    "question": "Combien de m2 de bureaux dans la tour Montparnasse ?",
+    "reponses": [
+      "70 000 m²",
+      "90 000 m²",
+      "110 000 m²",
+      "130 000 m²"
+    ]
+  },
+  {
+    "id": 13,
+    "categorie": "Répliques célèbres",
+    "difficulte": "difficile",
+    "bonne": "D",
+    "explication": "Dans le film Clara et les chics types. (1981)",
+    "points": 3,
+    "question": "\"il y a une phrase formidable de Spinoza, que j'ai oubliée.... mais c'est ça l'amour \" Quel acteur ? ",
+    "reponses": [
+      "Jean-Pierre Bacri",
+      "Jean Carmet",
+      "Philippe Noiret",
+      "Thierry Lhermitte"
+    ]
+  },
+  {
+    "id": 14,
+    "categorie": "Cinéma",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Raging Bull de Martin Scorsese (1980)",
+    "points": 3,
+    "question": "Dans quel film Robert De Niro s'exclame \"Did you fuck my wife ?\"",
+    "reponses": [
+      "Raging Bull",
+      "Casino",
+      "Les Affranchis",
+      "Taxi Driver"
+    ]
+  },
+  {
+    "id": 15,
+    "categorie": "Cinéma",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Paradis pour tous d'Alain Jessua (1982) est le dernier film de Patrick Dewaere.",
+    "points": 3,
+    "question": "Quel a été le dernier film de Patrick Dewaere ?",
+    "reponses": [
+      "Hôtel des Amériques",
+      "Paradis pour tous",
+      "Beau-père",
+      "Mille milliards de dollars"
+    ]
+  },
+  {
+    "id": 16,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Le héros incarné par Sylvester Stallone s'appelle John Rambo.",
+    "points": 1,
+    "question": "Quel est le prénom de Rambo ?",
+    "reponses": [
+      "Bob",
+      "Alex",
+      "John",
+      "Sylvester"
+    ]
+  },
+  {
+    "id": 17,
+    "categorie": "Cinéma",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "The Great Gatsby (1925)",
+    "points": 2,
+    "question": "Qui a écrit Gatsby le Magnifique ?",
+    "reponses": [
+      "Ernest Hemingway",
+      "William Faulkner",
+      "F. Scott Fitzgerald",
+      "Jack London"
+    ]
+  },
+  {
+    "id": 18,
+    "categorie": "Cinéma",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Paths of glory (1957) avec Kirk Douglas.",
+    "points": 3,
+    "question": "Qui a réalisé Les Sentiers de la gloire ?",
+    "reponses": [
+      "Stanley Kubrick",
+      "John Huston",
+      "Francis Ford Coppola",
+      "Elia Kazan"
+    ]
+  },
+  {
+    "id": 19,
+    "categorie": "Culture pop",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Au Québec, les Bisounours sont appelés Câlinours.",
+    "points": 3,
+    "question": "Comment s'appellent les Bisounours au Canada ?",
+    "reponses": [
+      "Câlinours",
+      "Doudounours",
+      "Les boules de tendresse",
+      "Tendrours"
+    ]
+  },
+  {
+    "id": 20,
+    "categorie": "Culture pop",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Doctor Strange est le Sorcier Suprême, gardien des arts mystiques dans l'univers Marvel.",
+    "points": 3,
+    "question": "Dans l'univers Marvel, quel personnage porte le titre de Sorcier Suprême ?",
+    "reponses": [
+      "Doctor Strange",
+      "Scarlet Witch",
+      "Loki",
+      "Agatha Harkness"
+    ]
+  },
+  {
+    "id": 21,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Friends est une série américaine diffusée de 1994 à 2004 sur NBC.",
+    "points": 1,
+    "question": "Dans quelle série voit-on les personnages de Ross, Rachel et Monica ?",
+    "reponses": [
+      "Seinfeld",
+      "How I Met Your Mother",
+      "Friends",
+      "The Big Bang Theory"
+    ]
+  },
+  {
+    "id": 22,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Gotham City est la ville fictive de DC Comics où évolue Batman.",
+    "points": 1,
+    "question": "Dans quelle ville imaginaire Batman protège-t-il les habitants ?",
+    "reponses": [
+      "Metropolis",
+      "Gotham City",
+      "Star City",
+      "Central City"
+    ]
+  },
+  {
+    "id": 23,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "La série se déroule principalement à Birmingham dans les années 1920.",
+    "points": 2,
+    "question": "Dans quelle ville se déroule la série Peaky Blinders ?",
+    "reponses": [
+      "Londres",
+      "Manchester",
+      "Birmingham",
+      "Liverpool"
+    ]
+  },
+  {
+    "id": 24,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Thriller est l'album le plus vendu de tous les temps avec plus de 66 millions d'exemplaires.",
+    "points": 2,
+    "question": "Quel artiste a sorti l'album Thriller en 1982 ?",
+    "reponses": [
+      "Prince",
+      "Michael Jackson",
+      "David Bowie",
+      "Whitney Houston"
+    ]
+  },
+  {
+    "id": 25,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le prénom de Picsou (Scrooge McDuck) est Balthazar en français.",
+    "points": 2,
+    "question": "Quel est le prénom de Picsou ?",
+    "reponses": [
+      "Barnabé",
+      "Balthazar",
+      "Jean-Claude",
+      "Archibald"
+    ]
+  },
+  {
+    "id": 26,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "Harry Potter est le personnage principal de la saga de J.K. Rowling.",
+    "points": 1,
+    "question": "Quel est le prénom du sorcier de la saga Harry Potter ?",
+    "reponses": [
+      "Harry",
+      "Ron",
+      "Hermione",
+      "Neville"
+    ]
+  },
+  {
+    "id": 27,
+    "categorie": "Culture pop",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Parasite de Bong Joon-ho a remporté la Palme d'or et l'Oscar du meilleur film.",
+    "points": 3,
+    "question": "Quel film a remporté la Palme d'or à Cannes en 2019 ?",
+    "reponses": [
+      "Parasite",
+      "Portrait de la jeune fille en feu",
+      "Once Upon a Time in Hollywood",
+      "Les Misérables"
+    ]
+  },
+  {
+    "id": 28,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le Monde de Nemo est sorti en 2003 et produit par Pixar pour Disney.",
+    "points": 2,
+    "question": "Quel film d'animation Disney raconte l'histoire d'un poisson-clown ?",
+    "reponses": [
+      "Bambi",
+      "Le Monde de Nemo",
+      "Ratatouille",
+      "Lilo et Stitch"
+    ]
+  },
+  {
+    "id": 29,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Bohemian Rhapsody est sorti en 1975 sur l'album A Night at the Opera de Queen.",
+    "points": 1,
+    "question": "Quel groupe britannique a chanté Bohemian Rhapsody ?",
+    "reponses": [
+      "The Beatles",
+      "Led Zeppelin",
+      "Queen",
+      "The Rolling Stones"
+    ]
+  },
+  {
+    "id": 30,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Cette réplique est prononcée pour la première fois par Obi-Wan Kenobi.",
+    "points": 1,
+    "question": "Quel personnage dit Que la Force soit avec toi dans Star Wars ?",
+    "reponses": [
+      "Dark Vador",
+      "Obi-Wan Kenobi",
+      "Luke Skywalker",
+      "Yoda"
+    ]
+  },
+  {
+    "id": 31,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Peter Jackson a réalisé la trilogie entre 2001 et 2003.",
+    "points": 2,
+    "question": "Quel réalisateur a créé la trilogie Le Seigneur des Anneaux au cinéma ?",
+    "reponses": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Peter Jackson",
+      "Ridley Scott"
+    ]
+  },
+  {
+    "id": 32,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "George R.R. Martin a commencé à publier Le Trône de fer en 1996.",
+    "points": 2,
+    "question": "Qui a écrit la saga de romans Game of Thrones ?",
+    "reponses": [
+      "J.R.R. Tolkien",
+      "George R.R. Martin",
+      "Terry Pratchett",
+      "Neil Gaiman"
+    ]
+  },
+  {
+    "id": 33,
+    "categorie": "Étymologie",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le mot denim vient de l'expression française \"de Nîmes\", ville où était produite cette toile.",
+    "points": 2,
+    "question": "D'où vient le mot Denim du jean ?",
+    "reponses": [
+      "De la ville de Denver",
+      "De \"de Nîmes\" (toile de Nîmes)",
+      "Du nom du tailleur Denim",
+      "De l'anglais denimal"
+    ]
+  },
+  {
+    "id": 34,
+    "categorie": "Étymologie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Mayday vient du français \"m'aider\" (venez m'aider), adopté comme signal de détresse en 1923.",
+    "points": 1,
+    "question": "D'où vient l'expression Mayday mayday ?",
+    "reponses": [
+      "D'un jour de sauvetage en mai",
+      "Du français m'aider",
+      "Du nom d'un navire sauvé",
+      "D'un code radio anglais"
+    ]
+  },
+  {
+    "id": 35,
+    "categorie": "Gastronomie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Neufchâtel est un fromage AOP normand, en forme de coeur.",
+    "points": 2,
+    "question": "Le fromage Neufchâtel est originaire de quelle région ?",
+    "reponses": [
+      "Suisse",
+      "Savoie",
+      "Normandie",
+      "Pyrénées"
+    ]
+  },
+  {
+    "id": 36,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "La France partage des frontières avec Luxembourg, Pays-Bas et Brésil (via la Guyane). Pas avec la Slovénie.",
+    "points": 2,
+    "question": "Avec quel pays la France ne partage-t-elle pas de frontière ?",
+    "reponses": [
+      "Luxembourg",
+      "Pays-Bas",
+      "Brésil",
+      "Slovénie"
+    ]
+  },
+  {
+    "id": 37,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "12 avenues partent de la place de l'Étoile à Paris.",
+    "points": 2,
+    "question": "Combien d'avenues partent de la place de l'Étoile à Paris ?",
+    "reponses": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ]
+  },
+  {
+    "id": 38,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "La France compte environ 35 000 communes.",
+    "points": 2,
+    "question": "Combien y a-t-il de communes en France ?",
+    "reponses": [
+      "36 000",
+      "44 000",
+      "52 000",
+      "80 000"
+    ]
+  },
+  {
+    "id": 39,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le Machu Picchu se trouve dans la région de Cusco, au Pérou.",
+    "points": 2,
+    "question": "Dans quel pays se trouve le Machu Picchu ?",
+    "reponses": [
+      "Bolivie",
+      "Pérou",
+      "Équateur",
+      "Colombie"
+    ]
+  },
+  {
+    "id": 40,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "Le thé est originaire de Chine, où sa culture remonte à plus de 4 000 ans.",
+    "points": 1,
+    "question": "De quel pays vient le thé ?",
+    "reponses": [
+      "Chine",
+      "Inde",
+      "Népal",
+      "Japon"
+    ]
+  },
+  {
+    "id": 41,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Le département de la Seine fut éclaté en 1968 en Paris et trois départements (Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne).",
+    "points": 3,
+    "question": "À quel département actuel correspondait l'ancien département de la Seine ?",
+    "reponses": [
+      "Paris",
+      "Seine Maritime",
+      "Essonne",
+      "Val d'Oise"
+    ]
+  },
+  {
+    "id": 42,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Les trois langues officielles de la Belgique sont le français, le néerlandais et l'allemand.",
+    "points": 3,
+    "question": "Parmi ces langues, laquelle ne fait pas partie des trois langues officielles de la Belgique ?",
+    "reponses": [
+      "Français",
+      "Flamand",
+      "Allemand",
+      "Néerlandais"
+    ]
+  },
+  {
+    "id": 43,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Japon, Malte et l'Afrique du Sud roulent à gauche. L'Argentine roule à droite.",
+    "points": 2,
+    "question": "Dans lequel de ces pays ne roule-t-on pas à gauche ?",
+    "reponses": [
+      "Japon",
+      "Malte",
+      "Argentine",
+      "Afrique du Sud"
+    ]
+  },
+  {
+    "id": 44,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Le détroit de Gibraltar, large d'environ 14 km, sépare l'Espagne du Maroc.",
+    "points": 3,
+    "question": "Quel détroit sépare l'Afrique de l'Europe ?",
+    "reponses": [
+      "Détroit de Malacca",
+      "Détroit d'Ormuz",
+      "Détroit de Gibraltar",
+      "Détroit de Magellan"
+    ]
+  },
+  {
+    "id": 45,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "L'étang de Berre (155 km²) est plus grand que les lacs naturels français.",
+    "points": 3,
+    "question": "Quel est le plus grand lac ou étang naturel de France ?",
+    "reponses": [
+      "L'étang de Berre",
+      "Le lac du Bourget",
+      "Le lac Léman",
+      "Le lac d'Annecy"
+    ]
+  },
+  {
+    "id": 46,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Le Nil mesure environ 6 650 km, ce qui en fait le plus long fleuve du monde.",
+    "points": 1,
+    "question": "Quel est le plus long fleuve du monde ?",
+    "reponses": [
+      "L'Amazone",
+      "Le Nil",
+      "Le Mississippi",
+      "Le Yangtsé"
+    ]
+  },
+  {
+    "id": 47,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Vatican couvre 0,44 km² et est le plus petit État reconnu du monde.",
+    "points": 2,
+    "question": "Quel est le plus petit pays du monde ?",
+    "reponses": [
+      "Monaco",
+      "Liechtenstein",
+      "Vatican",
+      "Saint-Marin"
+    ]
+  },
+  {
+    "id": 48,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Le Pacifique couvre environ 165 millions de km², soit plus de 46 % de la surface océanique totale.",
+    "points": 2,
+    "question": "Quel océan est le plus grand du monde ?",
+    "reponses": [
+      "Atlantique",
+      "Indien",
+      "Arctique",
+      "Pacifique"
+    ]
+  },
+  {
+    "id": 49,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "La Russie couvre 17,1 millions de km², soit le plus grand territoire mondial.",
+    "points": 2,
+    "question": "Quel pays possède le plus grand territoire au monde ?",
+    "reponses": [
+      "Canada",
+      "Chine",
+      "États-Unis",
+      "Russie"
+    ]
+  },
+  {
+    "id": 50,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "L'Oural est traditionnellement considéré comme la frontière naturelle entre Europe et Asie.",
+    "points": 2,
+    "question": "Quelle chaîne de montagnes sépare l'Europe de l'Asie ?",
+    "reponses": [
+      "Les Alpes",
+      "Le Caucase",
+      "L'Oural",
+      "Les Carpates"
+    ]
+  },
+  {
+    "id": 51,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Canberra est la capitale fédérale de l'Australie depuis 1913.",
+    "points": 1,
+    "question": "Quelle est la capitale de l'Australie ?",
+    "reponses": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ]
+  },
+  {
+    "id": 52,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Tokyo est la capitale du Japon depuis 1869.",
+    "points": 1,
+    "question": "Quelle est la capitale du Japon ?",
+    "reponses": [
+      "Osaka",
+      "Kyoto",
+      "Tokyo",
+      "Hiroshima"
+    ]
+  },
+  {
+    "id": 53,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Astana est la capitale du Kazakhstan depuis 1997 (anciennement Nursoultan).",
+    "points": 3,
+    "question": "Quelle est la capitale du Kazakhstan ?",
+    "reponses": [
+      "Almaty",
+      "Astana",
+      "Chymkent",
+      "Karaganda"
+    ]
+  },
+  {
+    "id": 54,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "La Méditerranée borde le sud de l'Europe et le nord de l'Afrique.",
+    "points": 1,
+    "question": "Quelle mer sépare l'Europe de l'Afrique à l'ouest ?",
+    "reponses": [
+      "Mer Rouge",
+      "Mer Méditerranée",
+      "Mer Noire",
+      "Mer Caspienne"
+    ]
+  },
+  {
+    "id": 55,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Le Sahara est le plus grand désert chaud du monde, situé en Afrique du Nord.",
+    "points": 1,
+    "question": "Sur quel continent se trouve le Sahara ?",
+    "reponses": [
+      "Asie",
+      "Amérique du Sud",
+      "Afrique",
+      "Australie"
+    ]
+  },
+  {
+    "id": 56,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "De Gaulle fut élu président en 1958, à la création de la Ve République.",
+    "points": 1,
+    "question": "Qui était le premier président de la Ve République française ?",
+    "reponses": [
+      "Charles de Gaulle",
+      "Georges Pompidou",
+      "François Mitterrand",
+      "Valéry Giscard d'Estaing"
+    ]
+  },
+  {
+    "id": 57,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "La prise de la Bastille le 14 juillet 1789 marque le début de la Révolution.",
+    "points": 1,
+    "question": "En quelle année a eu lieu la Révolution française ?",
+    "reponses": [
+      "1776",
+      "1789",
+      "1799",
+      "1804"
+    ]
+  },
+  {
+    "id": 58,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "La Commune de Paris a duré du 18 mars au 28 mai 1871.",
+    "points": 2,
+    "question": "En quelle année la Commune de Paris a-t-elle eu lieu ?",
+    "reponses": [
+      "1848",
+      "1871",
+      "1889",
+      "1903"
+    ]
+  },
+  {
+    "id": 59,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le mur de Berlin est tombé le 9 novembre 1989.",
+    "points": 2,
+    "question": "En quelle année le mur de Berlin est-il tombé ?",
+    "reponses": [
+      "1987",
+      "1989",
+      "1991",
+      "1993"
+    ]
+  },
+  {
+    "id": 60,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Napoléon se couronne à Notre-Dame de Paris le 2 décembre 1804.",
+    "points": 2,
+    "question": "En quelle année Napoléon Bonaparte est-il devenu empereur des Français ?",
+    "reponses": [
+      "1799",
+      "1802",
+      "1804",
+      "1806"
+    ]
+  },
+  {
+    "id": 61,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Fluctuat nec mergitur signifie Il est battu par les flots mais ne sombre pas.",
+    "points": 2,
+    "question": "Que signifie la devise de Paris ?",
+    "reponses": [
+      "Il est battu par les flots mais ne sombre pas",
+      "Liberté, Égalité, Fraternité",
+      "Plus oultre",
+      "Honi soit qui mal y pense"
+    ]
+  },
+  {
+    "id": 62,
+    "categorie": "Histoire",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Joseph Kessel et son neveu Maurice Druon ont écrit les paroles du Chant des Partisans en 1943.",
+    "points": 3,
+    "question": "Quel duo a écrit les paroles du Chant des Partisans ?",
+    "reponses": [
+      "Louis Aragon et Elsa Triolet",
+      "Joseph Kessel et Maurice Druon",
+      "Robert Desnos et Blaise Cendrars",
+      "Guillaume Apollinaire et Charles Péguy"
+    ]
+  },
+  {
+    "id": 63,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Alexandre le Grand a étendu l'Empire macédonien jusqu'en Inde.",
+    "points": 1,
+    "question": "Quel empire Alexandre le Grand a-t-il fondé ?",
+    "reponses": [
+      "L'Empire romain",
+      "L'Empire perse",
+      "L'Empire macédonien",
+      "L'Empire ottoman"
+    ]
+  },
+  {
+    "id": 64,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Les Pays-Bas ont légalisé le mariage entre personnes de même sexe le 1er avril 2001.",
+    "points": 1,
+    "question": "Quel est le premier pays à avoir légalisé le mariage entre personnes de même sexe en 2001 ?",
+    "reponses": [
+      "Canada",
+      "Pays-Bas",
+      "Belgique",
+      "Danemark"
+    ]
+  },
+  {
+    "id": 65,
+    "categorie": "Histoire",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "En franchissant le Rubicon, César déclencha la guerre civile romaine.",
+    "points": 3,
+    "question": "Quel général romain a franchi le Rubicon en 49 avant J.-C. ?",
+    "reponses": [
+      "Pompée",
+      "Jules César",
+      "Crassus",
+      "Marc Antoine"
+    ]
+  },
+  {
+    "id": 66,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Le Traité de Versailles est signé le 28 juin 1919.",
+    "points": 2,
+    "question": "Quel traité a mis fin à la Première Guerre mondiale ?",
+    "reponses": [
+      "Traité de Versailles",
+      "Traité de Paris",
+      "Traité de Vienne",
+      "Traité de Berlin"
+    ]
+  },
+  {
+    "id": 67,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Machu Picchu fut construit par les Incas au XVe siècle.",
+    "points": 2,
+    "question": "Quelle civilisation a construit le Machu Picchu ?",
+    "reponses": [
+      "Les Aztèques",
+      "Les Mayas",
+      "Les Incas",
+      "Les Olmèques"
+    ]
+  },
+  {
+    "id": 68,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "L'armistice du 11 novembre 1918 met fin à la Première Guerre mondiale.",
+    "points": 1,
+    "question": "Quelle guerre mondiale s'est terminée en 1918 ?",
+    "reponses": [
+      "Première Guerre mondiale",
+      "Deuxième Guerre mondiale",
+      "Guerre de Corée",
+      "Guerre du Vietnam"
+    ]
+  },
+  {
+    "id": 69,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Léonard de Vinci a peint La Joconde entre 1503 et 1519.",
+    "points": 1,
+    "question": "Qui a peint la Joconde ?",
+    "reponses": [
+      "Michel-Ange",
+      "Raphaël",
+      "Léonard de Vinci",
+      "Botticelli"
+    ]
+  },
+  {
+    "id": 70,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Cléopâtre VII fut la dernière souveraine de la dynastie ptolémaïque.",
+    "points": 2,
+    "question": "Qui était Cléopâtre VII ?",
+    "reponses": [
+      "Une reine de Grèce",
+      "La dernière pharaonne d'Égypte",
+      "Une impératrice romaine",
+      "Une reine de Carthage"
+    ]
+  },
+  {
+    "id": 71,
+    "categorie": "Langue française",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Un palindrome se lit dans les deux sens (ex : kayak).",
+    "points": 1,
+    "question": "Comment appelle-t-on un mot qui peut se lire dans les deux sens ?",
+    "reponses": [
+      "Pléonasme",
+      "Palindrome",
+      "Anagramme",
+      "Lipogramme"
+    ]
+  },
+  {
+    "id": 72,
+    "categorie": "Langue française",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Étique (sans accent) signifie maigre, décharné.",
+    "points": 2,
+    "question": "Que signifie l'adjectif étique ?",
+    "reponses": [
+      "Maigre",
+      "Qui concerne la morale",
+      "Qui a du mal à parler",
+      "Naturel"
+    ]
+  },
+  {
+    "id": 73,
+    "categorie": "Langue française",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Solde est masculin (différence comptable) ou féminin (paie militaire, marchandise soldée).",
+    "points": 3,
+    "question": "Quel est le genre grammatical du mot Solde ?",
+    "reponses": [
+      "Masculin uniquement",
+      "Féminin uniquement",
+      "Les deux selon le sens",
+      "Aucun (neutre)"
+    ]
+  },
+  {
+    "id": 74,
+    "categorie": "Métiers",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Un mixologue est un expert en cocktails, spécialisé dans leur création et réalisation.",
+    "points": 2,
+    "question": "Qu'est-ce qu'un mixologue ?",
+    "reponses": [
+      "Un DJ",
+      "Un barman spécialiste des cocktails",
+      "Le créateur d'un whisky",
+      "Le créateur d'une recette de cuisine"
+    ]
+  },
+  {
+    "id": 75,
+    "categorie": "Musique",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Just The Way You Are est une chanson de Billy Joel sortie en 1977.",
+    "points": 2,
+    "question": "À qui doit-on la chanson originale Just The Way You Are ?",
+    "reponses": [
+      "Barry White",
+      "Frank Sinatra",
+      "Shirley Bassey",
+      "Billy Joel"
+    ]
+  },
+  {
+    "id": 76,
+    "categorie": "Nature",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Un groupe d'étourneaux s'appelle un murmure, en référence aux figures aériennes qu'ils forment.",
+    "points": 3,
+    "question": "Comment se nomme un groupe d'étourneaux ?",
+    "reponses": [
+      "Une bande",
+      "Une troupe",
+      "Un murmure",
+      "Un banc"
+    ]
+  },
+  {
+    "id": 77,
+    "categorie": "Orthographe",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Cirrhose s'écrit avec deux R et un H.",
+    "points": 2,
+    "question": "Quelle est la bonne orthographe de cirrhose ?",
+    "reponses": [
+      "Cirhose",
+      "Cirrhose",
+      "Cyrrhose",
+      "Cirrose"
+    ]
+  },
+  {
+    "id": 78,
+    "categorie": "Religion",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Selon l'évangile de Marc, Jésus aurait eu 4 frères et plusieurs soeurs.",
+    "points": 3,
+    "question": "Combien de frères et soeurs avait Jésus ?",
+    "reponses": [
+      "4 frères",
+      "1 frère et 1 soeur",
+      "Il était fils unique",
+      "1 frère"
+    ]
+  },
+  {
+    "id": 79,
+    "categorie": "Répliques célèbres",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Réplique de Gigi dans Les Bronzés (1978) de Patrice Leconte.",
+    "points": 2,
+    "question": "Azur, nos bêtes sont bondées d'un cri... Dans quel film ?",
+    "reponses": [
+      "Mort sur le Nil",
+      "Climats",
+      "Les Bronzés",
+      "Lolita"
+    ]
+  },
+  {
+    "id": 80,
+    "categorie": "Répliques célèbres",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Réplique culte de Docteur Folamour de Stanley Kubrick (1964).",
+    "points": 3,
+    "question": "C'est sans danger - dans quel film ?",
+    "reponses": [
+      "Docteur Folamour",
+      "Eyes Wide Shut",
+      "L'arme fatale",
+      "Marathon Man"
+    ]
+  },
+  {
+    "id": 81,
+    "categorie": "Répliques célèbres",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Réplique du soldat Joker dans Full Metal Jacket de Stanley Kubrick (1987).",
+    "points": 3,
+    "question": "Happy birthday Jesus ! - dans quel film ?",
+    "reponses": [
+      "Dogma",
+      "Bruce tout puissant",
+      "Full Metal Jacket",
+      "La Passion du Christ"
+    ]
+  },
+  {
+    "id": 82,
+    "categorie": "Répliques célèbres",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "",
+    "points": 1,
+    "question": "I think we need a bigger boat - dans quel film ?",
+    "reponses": [
+      "Titanic",
+      "Dans la tempête",
+      "All is lost",
+      "Jaws (Les dents de la mer)"
+    ]
+  },
+  {
+    "id": 83,
+    "categorie": "Répliques célèbres",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "Réplique de Hubert Bonisseur de la Bath (Jean Dujardin) dans OSS 117 : Rio ne répond plus (2009).",
+    "points": 1,
+    "question": "J'aime me beurrer la biscotte - dans quel film ?",
+    "reponses": [
+      "OSS 117 Rio ne répond plus",
+      "Rocco et ses frères",
+      "La soupe aux choux",
+      "Hot shots"
+    ]
+  },
+  {
+    "id": 84,
+    "categorie": "Répliques célèbres",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "",
+    "points": 1,
+    "question": "Je suis le maître de mon destin, je suis le capitaine de mon âme - dans quel film ?",
+    "reponses": [
+      "Le cercle des poètes disparus",
+      "Hope and Glory",
+      "Les sentiers de la gloire",
+      "Invictus"
+    ]
+  },
+  {
+    "id": 85,
+    "categorie": "Répliques célèbres",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "",
+    "points": 2,
+    "question": "Le train de tes injures roule sur les rails de mon indifférence - dans quel film ?",
+    "reponses": [
+      "La vie du rail",
+      "La classe américaine",
+      "Maman j'ai raté l'avion",
+      "Le bon la brute et le truand"
+    ]
+  },
+  {
+    "id": 86,
+    "categorie": "Répliques célèbres",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Réplique de Baptiste dans Les Enfants du paradis (1945) de Marcel Carné.",
+    "points": 3,
+    "question": "Paris est tout petit quand on s'aime comme nous un aussi grand amour - dans quel film ?",
+    "reponses": [
+      "Paris je t'aime",
+      "Les enfants du paradis",
+      "Forget Paris",
+      "Minuit à Paris"
+    ]
+  },
+  {
+    "id": 87,
+    "categorie": "Répliques célèbres",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "",
+    "points": 2,
+    "question": "Tu as déjà vu un monsieur tout nu ? - dans quel film ?",
+    "reponses": [
+      "La vie est un long fleuve tranquille",
+      "Y a-t-il un pilote dans l'avion ?",
+      "C'est arrivé près de chez vous",
+      "Grâce à Dieu"
+    ]
+  },
+  {
+    "id": 88,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Depuis 2006 et la reclassification de Pluton, le système solaire compte 8 planètes.",
+    "points": 1,
+    "question": "Combien de planètes compte notre système solaire ?",
+    "reponses": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ]
+  },
+  {
+    "id": 89,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le squelette humain adulte compte 206 os.",
+    "points": 2,
+    "question": "Combien d'os compte le corps humain adulte ?",
+    "reponses": [
+      "106",
+      "206",
+      "306",
+      "406"
+    ]
+  },
+  {
+    "id": 90,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Au vient du latin aurum, qui signifie or.",
+    "points": 2,
+    "question": "Quel élément chimique a le symbole Au ?",
+    "reponses": [
+      "Argent",
+      "Aluminium",
+      "Or",
+      "Argon"
+    ]
+  },
+  {
+    "id": 91,
+    "categorie": "Science",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "L'or (Au) a le numéro atomique 79 dans le tableau périodique.",
+    "points": 3,
+    "question": "Quel est le numéro atomique de l'or ?",
+    "reponses": [
+      "47",
+      "79",
+      "82",
+      "92"
+    ]
+  },
+  {
+    "id": 92,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "Le coeur est une pompe musculaire qui assure la circulation sanguine.",
+    "points": 1,
+    "question": "Quel organe pompe le sang dans le corps humain ?",
+    "reponses": [
+      "Le foie",
+      "Les poumons",
+      "Le cerveau",
+      "Le coeur"
+    ]
+  },
+  {
+    "id": 93,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Einstein a publié sa théorie de la relativité restreinte en 1905.",
+    "points": 1,
+    "question": "Quel scientifique a formulé la théorie de la relativité ?",
+    "reponses": [
+      "Isaac Newton",
+      "Nikola Tesla",
+      "Albert Einstein",
+      "Stephen Hawking"
+    ]
+  },
+  {
+    "id": 94,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "L'eau est composée de deux atomes d'hydrogène et d'un atome d'oxygène.",
+    "points": 1,
+    "question": "Quelle est la formule chimique de l'eau ?",
+    "reponses": [
+      "CO2",
+      "H2O",
+      "NaCl",
+      "O2"
+    ]
+  },
+  {
+    "id": 95,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "La lumière parcourt environ 299 792 458 mètres par seconde dans le vide.",
+    "points": 2,
+    "question": "Quelle est la vitesse de la lumière dans le vide ?",
+    "reponses": [
+      "300 000 km/s",
+      "150 000 km/s",
+      "450 000 km/s",
+      "30 000 km/s"
+    ]
+  },
+  {
+    "id": 96,
+    "categorie": "Science",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Le premier principe de la thermodynamique énonce la conservation de l'énergie.",
+    "points": 3,
+    "question": "Quelle loi physique stipule que l'énergie ne se crée ni ne se détruit ?",
+    "reponses": [
+      "Loi de Coulomb",
+      "Loi d'Ohm",
+      "Premier principe de la thermodynamique",
+      "Loi de Boyle-Mariotte"
+    ]
+  },
+  {
+    "id": 97,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Mars doit sa couleur rouge aux oxydes de fer présents à sa surface.",
+    "points": 2,
+    "question": "Quelle planète est surnommée la planète rouge ?",
+    "reponses": [
+      "Vénus",
+      "Jupiter",
+      "Mars",
+      "Saturne"
+    ]
+  },
+  {
+    "id": 98,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Les plantes convertissent la lumière solaire en énergie chimique via la photosynthèse.",
+    "points": 1,
+    "question": "Qu'est-ce que la photosynthèse ?",
+    "reponses": [
+      "La respiration des animaux",
+      "La production d'énergie par les plantes grâce à la lumière",
+      "La décomposition des matières organiques",
+      "Le cycle de l'eau"
+    ]
+  },
+  {
+    "id": 99,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Alexander Fleming a découvert la pénicilline en 1928 par hasard.",
+    "points": 2,
+    "question": "Qui a découvert la pénicilline ?",
+    "reponses": [
+      "Louis Pasteur",
+      "Marie Curie",
+      "Alexander Fleming",
+      "Joseph Lister"
+    ]
+  },
+  {
+    "id": 100,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "La série Friends compte 236 épisodes répartis sur 10 saisons (1994-2004).",
+    "points": 2,
+    "question": "Combien d'épisodes compte la série Friends (à la dizaine près) ?",
+    "reponses": [
+      "145",
+      "236",
+      "345",
+      "444"
+    ]
+  },
+  {
+    "id": 101,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Steve Carell incarne Michael Scott dans The Office US (2005-2013).",
+    "points": 2,
+    "question": "Quel acteur joue le personnage principal de la version américaine de The Office ?",
+    "reponses": [
+      "Steve Carell",
+      "John Krasinski",
+      "Rainn Wilson",
+      "Ed Helms"
+    ]
+  },
+  {
+    "id": 102,
+    "categorie": "Série",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Jonathan et Jennifer Hart sont les héros de la série L'Amour du risque (Hart to Hart).",
+    "points": 3,
+    "question": "Comment se nomment les 2 héros de la série L'Amour du risque ?",
+    "reponses": [
+      "John et Jane",
+      "Jonathan et Jennifer Hart",
+      "Tom et Sarah Hart",
+      "Henry et Lucy"
+    ]
+  },
+  {
+    "id": 103,
+    "categorie": "Série",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Walter White et Jesse Pinkman fabriquent de la méthamphétamine bleue.",
+    "points": 1,
+    "question": "Dans Breaking Bad, quelle drogue fabriquent-ils ?",
+    "reponses": [
+      "Cocaïne",
+      "Cannabis",
+      "Méthamphétamine",
+      "CBD"
+    ]
+  },
+  {
+    "id": 104,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Pamela est mariée à Bobby Ewing dans la série Dallas.",
+    "points": 2,
+    "question": "Dans la série Dallas, qui est le mari de Pamela ?",
+    "reponses": [
+      "JR Ewing",
+      "Bobby Ewing",
+      "Cliff Barnes",
+      "Ray Krebbs"
+    ]
+  },
+  {
+    "id": 105,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "L'action se déroule dans la République de Gilead, État totalitaire post-américain.",
+    "points": 2,
+    "question": "Dans La Servante écarlate, comment s'appelle le pays de l'action principale ?",
+    "reponses": [
+      "République de Gilead",
+      "République de Galaad",
+      "Nouvelle Amérique",
+      "République des États"
+    ]
+  },
+  {
+    "id": 106,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le marine Nicholas Brody a été retenu prisonnier en Irak pendant 8 ans.",
+    "points": 2,
+    "question": "Dans quel pays le héros de Homeland a-t-il été retenu prisonnier ?",
+    "reponses": [
+      "Iran",
+      "Afghanistan",
+      "Irak",
+      "Syrie"
+    ]
+  },
+  {
+    "id": 107,
+    "categorie": "Série",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "",
+    "points": 3,
+    "question": "Quelle actrice incarne Margaret, la soeur de la reine, à partir de la saison 3 de The Crown ?",
+    "reponses": [
+      "Helena Bonham Carter",
+      "Maggie Smith",
+      "Olivia Colman",
+      "Cate Blanchett"
+    ]
+  },
+  {
+    "id": 108,
+    "categorie": "Société",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "L'Île-de-France compte environ 700 000 étudiants.",
+    "points": 3,
+    "question": "Combien y a-t-il d'étudiants en Île-de-France ?",
+    "reponses": [
+      "350 000",
+      "700 000",
+      "1 000 000",
+      "1 500 000"
+    ]
+  },
+  {
+    "id": 109,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Une équipe de football est composée de 11 joueurs sur le terrain.",
+    "points": 1,
+    "question": "Combien de joueurs compte une équipe de football sur le terrain ?",
+    "reponses": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  {
+    "id": 110,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Les hommes jouent en cinq sets, il faut en remporter trois pour gagner.",
+    "points": 2,
+    "question": "Combien de sets faut-il gagner en Grand Chelem chez les hommes ?",
+    "reponses": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "id": 111,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Pierre de Coubertin relança les JO en 1896 à Athènes, en Grèce.",
+    "points": 1,
+    "question": "Dans quel pays les Jeux Olympiques modernes ont-ils été créés ?",
+    "reponses": [
+      "France",
+      "Grèce",
+      "Angleterre",
+      "Italie"
+    ]
+  },
+  {
+    "id": 112,
+    "categorie": "Sport",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Le goaltending au basketball désigne l'interférence illégale avec un tir en descente.",
+    "points": 3,
+    "question": "Dans quel sport appelle-t-on une faute goaltending ?",
+    "reponses": [
+      "Football américain",
+      "Baseball",
+      "Basketball",
+      "Hockey sur glace"
+    ]
+  },
+  {
+    "id": 113,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Le volant (shuttlecock) est l'objet utilisé au badminton.",
+    "points": 1,
+    "question": "Dans quel sport utilise-t-on un volant ?",
+    "reponses": [
+      "Tennis",
+      "Squash",
+      "Badminton",
+      "Ping-pong"
+    ]
+  },
+  {
+    "id": 114,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Le Stade de France a été inauguré le 28 janvier 1998.",
+    "points": 1,
+    "question": "En quelle année a été inauguré le Stade de France ?",
+    "reponses": [
+      "1995",
+      "1998",
+      "2000",
+      "2002"
+    ]
+  },
+  {
+    "id": 115,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Les femmes ont participé pour la première fois aux JO de Paris en 1900.",
+    "points": 2,
+    "question": "En quelle année les femmes ont-elles participé aux JO pour la première fois ?",
+    "reponses": [
+      "1896",
+      "1900",
+      "1920",
+      "1948"
+    ]
+  },
+  {
+    "id": 116,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Paris a été recalée 3 fois (1992, 2008, 2012) avant d'obtenir les JO 2024.",
+    "points": 2,
+    "question": "Combien de fois Paris a-t-elle été recalée avant d'obtenir les JO 2024 ?",
+    "reponses": [
+      "1 fois",
+      "2 fois",
+      "3 fois",
+      "5 fois"
+    ]
+  },
+  {
+    "id": 117,
+    "categorie": "Sport",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Laura Flessel a été médaillée d'or olympique en escrime à Atlanta 1996.",
+    "points": 3,
+    "question": "Lequel de ces champions olympiques est médaillé d'or dans les années 90 ?",
+    "reponses": [
+      "Laura Flessel",
+      "Laure Manaudou",
+      "Teddy Riner",
+      "Martin Fourcade"
+    ]
+  },
+  {
+    "id": 118,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Yannick Noah avait 23 ans quand il a gagné Roland Garros en 1983.",
+    "points": 2,
+    "question": "Quel âge avait Yannick Noah quand il a remporté Roland Garros ?",
+    "reponses": [
+      "23",
+      "25",
+      "26",
+      "28"
+    ]
+  },
+  {
+    "id": 119,
+    "categorie": "Sport",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Usain Bolt a établi ce record à Berlin lors des Mondiaux 2009.",
+    "points": 3,
+    "question": "Quel athlète a couru le 100m en 9,58 secondes, record du monde actuel ?",
+    "reponses": [
+      "Carl Lewis",
+      "Maurice Greene",
+      "Usain Bolt",
+      "Tyson Gay"
+    ]
+  },
+  {
+    "id": 120,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Michael Phelps détient le record avec 28 médailles olympiques (dont 23 en or).",
+    "points": 1,
+    "question": "Quel athlète possède le record absolu de médailles olympiques ?",
+    "reponses": [
+      "Carl Lewis",
+      "Michael Phelps",
+      "Mark Spitz",
+      "Bjørn Dæhlie"
+    ]
+  },
+  {
+    "id": 121,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Real Madrid a remporté 15 Ligues des Champions au total.",
+    "points": 2,
+    "question": "Quel club de football a remporté le plus de Ligues des Champions ?",
+    "reponses": [
+      "FC Barcelone",
+      "Bayern Munich",
+      "Real Madrid",
+      "Liverpool"
+    ]
+  },
+  {
+    "id": 122,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Michael Phelps a remporté 23 médailles d'or olympiques.",
+    "points": 1,
+    "question": "Quel nageur détient le record du plus grand nombre de médailles olympiques ?",
+    "reponses": [
+      "Mark Spitz",
+      "Ian Thorpe",
+      "Michael Phelps",
+      "Ryan Lochte"
+    ]
+  },
+  {
+    "id": 123,
+    "categorie": "Sport",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Les premiers JO d'hiver ont eu lieu à Chamonix, en France, en 1924.",
+    "points": 2,
+    "question": "Quel pays a organisé les premiers Jeux Olympiques d'hiver ?",
+    "reponses": [
+      "Norvège",
+      "Suisse",
+      "France",
+      "Autriche"
+    ]
+  },
+  {
+    "id": 124,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "La France a battu la Croatie 4-2 en finale à Moscou.",
+    "points": 1,
+    "question": "Quel pays a remporté la Coupe du Monde de football en 2018 ?",
+    "reponses": [
+      "Brésil",
+      "Allemagne",
+      "France",
+      "Argentine"
+    ]
+  },
+  {
+    "id": 125,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Ferdinand de Lesseps, diplomate français, a dirigé la construction du canal inauguré en 1869.",
+    "points": 2,
+    "question": "Quelle nation est à l'origine de la construction du Canal de Suez ?",
+    "reponses": [
+      "Royaume-Uni",
+      "Égypte",
+      "Égypte et Italie",
+      "France"
+    ]
+  },
+  {
+    "id": 126,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "La Charente traverse Cognac et Rochefort avant de se jeter dans l'Atlantique.",
+    "points": 2,
+    "question": "Quel fleuve traverse Cognac et Rochefort ?",
+    "reponses": [
+      "La Charente",
+      "L'estuaire de la Gironde",
+      "La Dordogne",
+      "La Garonne"
+    ]
+  },
+  {
+    "id": 127,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Winston Churchill a reçu le prix Nobel de littérature en 1953 pour ses mémoires et discours.",
+    "points": 2,
+    "question": "Quel homme politique a remporté un prix Nobel de littérature ?",
+    "reponses": [
+      "Léopold Sédar Senghor",
+      "Winston Churchill",
+      "Gandhi",
+      "Barack Obama"
+    ]
+  },
+  {
+    "id": 128,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "Timon est le suricate, Pumbaa est le phacochère dans Le Roi Lion.",
+    "points": 1,
+    "question": "Quel nom porte le suricate dans Le Roi Lion ?",
+    "reponses": [
+      "Pumba",
+      "Scar",
+      "Nala",
+      "Timon"
+    ]
+  },
+  {
+    "id": 129,
+    "categorie": "Littérature",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Salammbô de Flaubert (1862) s'ouvre sur une fête dans les jardins d'Hamilcar à Carthage.",
+    "points": 3,
+    "question": "Quel ouvrage commence par une fête dans le faubourg de Carthaginois ?",
+    "reponses": [
+      "Salammbô",
+      "Les Misérables",
+      "Quo Vadis",
+      "La Tentation de saint Antoine"
+    ]
+  },
+  {
+    "id": 130,
+    "categorie": "Sport",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "L'Uruguay a accueilli et remporté la première Coupe du Monde de football en 1930.",
+    "points": 1,
+    "question": "Quel pays a accueilli la première Coupe du monde de foot en 1930 ?",
+    "reponses": [
+      "France",
+      "Angleterre",
+      "Uruguay",
+      "Brésil"
+    ]
+  },
+  {
+    "id": 131,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "La Croatie a rejoint la zone euro et l'espace Schengen le 1er janvier 2023.",
+    "points": 2,
+    "question": "Quel pays a rejoint la zone euro et l'espace Schengen au 1er janvier 2023 ?",
+    "reponses": [
+      "Croatie",
+      "Bulgarie",
+      "Roumanie",
+      "Serbie"
+    ]
+  },
+  {
+    "id": 132,
+    "categorie": "Littérature",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "",
+    "points": 3,
+    "question": "Qui a écrit Martin Eden ?",
+    "reponses": [
+      "Jack London",
+      "John Steinbeck",
+      "James Ellroy",
+      "Mark Twain"
+    ]
+  },
+  {
+    "id": 133,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "André-Marie Ampère (1775-1836) a donné son nom à l'unité d'intensité du courant électrique.",
+    "points": 1,
+    "question": "Quel physicien a donné son nom à l'unité mesurant l'intensité du courant électrique ?",
+    "reponses": [
+      "James Watt",
+      "André-Marie Ampère",
+      "Alessandro Volta",
+      "Georg Ohm"
+    ]
+  },
+  {
+    "id": 134,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Félix Faure est mort le 16 février 1899 à l'Élysée en compagnie de Marguerite Steinheil.",
+    "points": 2,
+    "question": "Quel président français est mort dans les bras de sa maîtresse ?",
+    "reponses": [
+      "Émile Deschanel",
+      "Émile Loubet",
+      "Jules Ferry",
+      "Félix Faure"
+    ]
+  },
+  {
+    "id": 135,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "",
+    "points": 2,
+    "question": "Quel cours d'eau traverse la ville d'Angers ?",
+    "reponses": [
+      "La Loire",
+      "La Maine",
+      "Le Loir",
+      "Le Cher"
+    ]
+  },
+  {
+    "id": 136,
+    "categorie": "Musique",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Mylène Farmer détient le record du nombre de numéros 1 au Top 50 français.",
+    "points": 3,
+    "question": "Quel artiste a classé le plus de titres en 1re place du Top 50 en France ?",
+    "reponses": [
+      "Johnny Hallyday",
+      "Mylène Farmer",
+      "Céline Dion",
+      "Charles Aznavour"
+    ]
+  },
+  {
+    "id": 137,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "La Gare du Nord est la gare la plus fréquentée d'Europe avec environ 200 millions de voyageurs par an.",
+    "points": 2,
+    "question": "Quelle est la 1re gare européenne en nombre de voyageurs ?",
+    "reponses": [
+      "Londres Waterloo",
+      "New York Grand Central",
+      "Paris Gare du Nord",
+      "Moscou"
+    ]
+  },
+  {
+    "id": 138,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Berne est la capitale fédérale de la Suisse.",
+    "points": 1,
+    "question": "Quelle est la capitale de la Suisse ?",
+    "reponses": [
+      "Genève",
+      "Berne",
+      "Zurich",
+      "Lausanne"
+    ]
+  },
+  {
+    "id": 139,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "New Delhi est la capitale de l'Inde depuis l'indépendance en 1947.",
+    "points": 1,
+    "question": "Quelle est la capitale de l'Inde ?",
+    "reponses": [
+      "Mumbai",
+      "New Delhi",
+      "Calcutta",
+      "Bombay"
+    ]
+  },
+  {
+    "id": 140,
+    "categorie": "Économie",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Le billet de 200 € est de couleur jaune-orangé.",
+    "points": 2,
+    "question": "Quelle est la couleur d'un billet de 200 € ?",
+    "reponses": [
+      "Bleue",
+      "Rouge",
+      "Verte",
+      "Jaune"
+    ]
+  },
+  {
+    "id": 141,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le 13e amendement abolissant l'esclavage aux États-Unis a été ratifié le 6 décembre 1865.",
+    "points": 2,
+    "question": "En quelle année l'esclavage a-t-il été aboli aux États-Unis ?",
+    "reponses": [
+      "1820",
+      "1865",
+      "1895",
+      "1912"
+    ]
+  },
+  {
+    "id": 142,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Charlie Chaplin est né à Londres en 1889 et est resté de nationalité britannique.",
+    "points": 1,
+    "question": "Quelle est la nationalité de Charlie Chaplin ?",
+    "reponses": [
+      "Américaine",
+      "Britannique",
+      "Australienne",
+      "Suisse"
+    ]
+  },
+  {
+    "id": 143,
+    "categorie": "Cinéma",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Georges Abitbol dit Monde de merde avant de mourir dans La Cité de la Peur (1994).",
+    "points": 2,
+    "question": "Quelle est la phrase prononcée par Georges Abitbol avant de mourir ?",
+    "reponses": [
+      "Rosebud",
+      "Vive l'OM",
+      "Monde de merde",
+      "Omar m'a tuer"
+    ]
+  },
+  {
+    "id": 144,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Kinshasa (RDC) est la plus grande ville francophone du monde, avec plus de 15 millions d'habitants.",
+    "points": 2,
+    "question": "Quelle est la plus grande ville francophone au monde ?",
+    "reponses": [
+      "Paris",
+      "Dakar",
+      "Kinshasa",
+      "Montréal"
+    ]
+  },
+  {
+    "id": 145,
+    "categorie": "Langue française",
+    "difficulte": "difficile",
+    "bonne": "A",
+    "explication": "Un nyctalope voit bien dans l'obscurité (du grec nyx, nuit).",
+    "points": 3,
+    "question": "Quelle est la signification de nyctalope ?",
+    "reponses": [
+      "Qui voit bien la nuit",
+      "Qui a peur du noir",
+      "Qui ne voit que d'un oeil",
+      "Qui parle en dormant"
+    ]
+  },
+  {
+    "id": 146,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "La Terre est la 3e planète du système solaire, entre Vénus (2e) et Mars (4e).",
+    "points": 1,
+    "question": "Quelle planète est située entre Vénus et Mars ?",
+    "reponses": [
+      "Mercure",
+      "Uranus",
+      "La Terre",
+      "Saturne"
+    ]
+  },
+  {
+    "id": 147,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "L'Appel du 18 juin 1940 a été diffusé sur les ondes de la BBC depuis Londres.",
+    "points": 2,
+    "question": "Quelle radio diffusa l'Appel du 18 Juin du Général de Gaulle ?",
+    "reponses": [
+      "Radio Londres",
+      "Radio Paris",
+      "BBC",
+      "Radio Télé Luxembourg"
+    ]
+  },
+  {
+    "id": 148,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Les poissons respirent grâce à leurs branchies, qui filtrent l'oxygène dissous dans l'eau.",
+    "points": 1,
+    "question": "Quels organes permettent aux poissons de respirer ?",
+    "reponses": [
+      "Les poumons",
+      "Les ouïes",
+      "Les branchies",
+      "Les écailles"
+    ]
+  },
+  {
+    "id": 149,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Billy Crystal (Harry) et Meg Ryan (Sally) dans le film de Rob Reiner (1989).",
+    "points": 1,
+    "question": "Quels sont les 2 acteurs principaux de Quand Harry rencontre Sally ?",
+    "reponses": [
+      "Tom Hanks et Meg Ryan",
+      "Dustin Hoffman et Meryl Streep",
+      "Billy Crystal et Meg Ryan",
+      "Jack Nicholson et Diane Keaton"
+    ]
+  },
+  {
+    "id": 150,
+    "categorie": "Nature",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "L'ormeau (Haliotis) est un mollusque gastéropode marin très apprécié en gastronomie.",
+    "points": 2,
+    "question": "Qu'est-ce qu'un ormeau ?",
+    "reponses": [
+      "Un oiseau",
+      "Un arbre",
+      "Un mollusque marin",
+      "Un ustensile"
+    ]
+  },
+  {
+    "id": 151,
+    "categorie": "Technologie",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Le Palm Pilot, lancé en 1996, est l'un des premiers PDA grand public.",
+    "points": 2,
+    "question": "Qu'est-ce qu'un Palm Pilot ?",
+    "reponses": [
+      "Un assistant personnel numérique",
+      "Un GPS",
+      "Un bipeur",
+      "Un routeur de bateau"
+    ]
+  },
+  {
+    "id": 152,
+    "categorie": "Culture pop",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Oumpapa a été créé par Albert Uderzo en 1958, avant même Astérix.",
+    "points": 3,
+    "question": "Qui a dessiné Oumpapa ?",
+    "reponses": [
+      "René Goscinny",
+      "Albert Uderzo",
+      "Franquin",
+      "Hergé"
+    ]
+  },
+  {
+    "id": 153,
+    "categorie": "Littérature",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Tennessee Williams a écrit A Streetcar Named Desire, créée en 1947 à Broadway.",
+    "points": 2,
+    "question": "Qui a écrit Un tramway nommé désir ?",
+    "reponses": [
+      "Arthur Miller",
+      "Tennessee Williams",
+      "Eugene O'Neill",
+      "Edward Albee"
+    ]
+  },
+  {
+    "id": 154,
+    "categorie": "Littérature",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Le Dernier des Mohicans (1826) est le roman le plus célèbre de James Fenimore Cooper.",
+    "points": 2,
+    "question": "Qui a écrit Le Dernier des Mohicans ?",
+    "reponses": [
+      "Mark Twain",
+      "Herman Melville",
+      "James Fenimore Cooper",
+      "Jack London"
+    ]
+  },
+  {
+    "id": 155,
+    "categorie": "Littérature",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Brave New World (Le Meilleur des mondes) a été publié par Aldous Huxley en 1932.",
+    "points": 1,
+    "question": "Qui a écrit Le Meilleur des mondes ?",
+    "reponses": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "Philip K. Dick"
+    ]
+  },
+  {
+    "id": 156,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "George Washington, premier président des États-Unis de 1789 à 1797.",
+    "points": 1,
+    "question": "Qui a été le premier président des États-Unis ?",
+    "reponses": [
+      "Benjamin Franklin",
+      "John Adams",
+      "Thomas Jefferson",
+      "George Washington"
+    ]
+  },
+  {
+    "id": 157,
+    "categorie": "Sport",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Rod Laver est le dernier joueur à avoir réalisé le Grand Chelem calendaire en 1969.",
+    "points": 3,
+    "question": "Qui est le dernier tennisman à avoir réussi le Grand Chelem calendaire ?",
+    "reponses": [
+      "Borg",
+      "Federer",
+      "Laver",
+      "Arthur Ashe"
+    ]
+  },
+  {
+    "id": 158,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Robert Zemeckis a réalisé Forrest Gump (1994) avec Tom Hanks.",
+    "points": 1,
+    "question": "Qui est le réalisateur du film Forrest Gump ?",
+    "reponses": [
+      "Peter Weir",
+      "Robert Zemeckis",
+      "Steven Spielberg",
+      "James Cameron"
+    ]
+  },
+  {
+    "id": 159,
+    "categorie": "Série",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "Jon Hamm incarne Don Draper dans Mad Men (AMC, 2007-2015).",
+    "points": 1,
+    "question": "Qui joue le personnage de Don Draper dans Mad Men ?",
+    "reponses": [
+      "Jon Hamm",
+      "Bryan Cranston",
+      "Don Cheadle",
+      "Matthew Weiner"
+    ]
+  },
+  {
+    "id": 160,
+    "categorie": "Cinéma",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Gene Hackman et Roy Scheider incarnent les deux inspecteurs dans French Connection (1971).",
+    "points": 2,
+    "question": "Qui sont les 2 principaux acteurs du film French Connection ?",
+    "reponses": [
+      "Jean Dujardin et Gilles Lellouche",
+      "Danny Glover et Mel Gibson",
+      "Gene Hackman et Roy Scheider",
+      "Denzel Washington et Russell Crowe"
+    ]
+  },
+  {
+    "id": 162,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "",
+    "points": 2,
+    "question": "Département 90 sur une plaque d'immatriculation : d'où vient-on ?",
+    "reponses": [
+      "Haute-Saône",
+      "Franche-Comté",
+      "Territoire de Belfort",
+      "Doubs"
+    ]
+  },
+  {
+    "id": 163,
+    "categorie": "Économie",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "",
+    "points": 1,
+    "question": "Que signifie l'abréviation SMIC ?",
+    "reponses": [
+      "Salaire Mensuel Indexé sur la Consommation",
+      "Salaire Minimum Interprofessionnel de Croissance",
+      "Salaire Minimum Interprofessionnel de Compensation",
+      "Système de Mesure des Indemnités de Congés"
+    ]
+  },
+  {
+    "id": 164,
+    "categorie": "Cinéma",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "The Godfather (1972) est le premier volet de la trilogie de Francis Ford Coppola.",
+    "points": 2,
+    "question": "Qui a réalisé Le Parrain (The Godfather) en 1972 ?",
+    "reponses": [
+      "Steven Spielberg",
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Elia Kazan"
+    ]
+  },
+  {
+    "id": 165,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Breakfast at Tiffany's (Diamants sur canapé) est sorti en 1961, réalisé par Blake Edwards.",
+    "points": 1,
+    "question": "Dans quel film Audrey Hepburn joue-t-elle Holly Golightly ?",
+    "reponses": [
+      "Sabrina",
+      "Breakfast at Tiffany's",
+      "Roman Holiday",
+      "Charade"
+    ]
+  },
+  {
+    "id": 166,
+    "categorie": "Cinéma",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Il Gattopardo (Le Guépard, 1963) a remporté la Palme d'or à Cannes.",
+    "points": 3,
+    "question": "Quel film de Visconti est adapté du roman de Tomasi di Lampedusa ?",
+    "reponses": [
+      "Rocco et ses frères",
+      "La Terre tremble",
+      "Le Guépard",
+      "Ludwig"
+    ]
+  },
+  {
+    "id": 167,
+    "categorie": "Cinéma",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Réplique emblématique de Vito Corleone dans The Godfather (1972).",
+    "points": 2,
+    "question": "Dans quel film Marlon Brando dit-il I'm gonna make him an offer he can't refuse ?",
+    "reponses": [
+      "Apocalypse Now",
+      "Le Parrain",
+      "Sur les quais",
+      "Last Tango in Paris"
+    ]
+  },
+  {
+    "id": 168,
+    "categorie": "Cinéma",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Daniel Craig a incarné James Bond pour la première fois dans Casino Royale (2006).",
+    "points": 1,
+    "question": "Quel acteur joue James Bond dans Casino Royale (2006) ?",
+    "reponses": [
+      "Pierce Brosnan",
+      "Roger Moore",
+      "Daniel Craig",
+      "Timothy Dalton"
+    ]
+  },
+  {
+    "id": 169,
+    "categorie": "Musique",
+    "difficulte": "facile",
+    "bonne": "D",
+    "explication": "Johnny Hallyday était surnommé la voix et l'idole des jeunes.",
+    "points": 1,
+    "question": "Quel chanteur français est surnommé la voix ?",
+    "reponses": [
+      "Serge Gainsbourg",
+      "Charles Aznavour",
+      "Frank Sinatra",
+      "Johnny Hallyday"
+    ]
+  },
+  {
+    "id": 170,
+    "categorie": "Musique",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "L'album Let It Be est sorti en mai 1970, quelques semaines après la séparation du groupe.",
+    "points": 2,
+    "question": "Quel album des Beatles contient la chanson Let It Be ?",
+    "reponses": [
+      "Abbey Road",
+      "Sgt. Pepper's",
+      "Let It Be",
+      "The White Album"
+    ]
+  },
+  {
+    "id": 171,
+    "categorie": "Musique",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Discovery est sorti en 2001 avec One More Time et Digital Love.",
+    "points": 3,
+    "question": "En quelle année Daft Punk a-t-il sorti l'album Discovery ?",
+    "reponses": [
+      "1997",
+      "2001",
+      "2005",
+      "2008"
+    ]
+  },
+  {
+    "id": 172,
+    "categorie": "Musique",
+    "difficulte": "moyen",
+    "bonne": "A",
+    "explication": "Édith Piaf est née Édith Giovanna Gassion le 19 décembre 1915 à Paris.",
+    "points": 2,
+    "question": "Quel est le vrai nom d'Édith Piaf ?",
+    "reponses": [
+      "Édith Giovanna Gassion",
+      "Marie-Claire Bonnet",
+      "Édith Marthe Dupont",
+      "Yvonne Édith Bouchard"
+    ]
+  },
+  {
+    "id": 173,
+    "categorie": "Musique",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Les chansons de Grease (1978) sont interprétées par John Travolta et Olivia Newton-John.",
+    "points": 1,
+    "question": "Quel groupe a interprété les chansons du film Grease ?",
+    "reponses": [
+      "Bee Gees",
+      "Travolta et Newton-John",
+      "Chicago",
+      "The Grease Band"
+    ]
+  },
+  {
+    "id": 174,
+    "categorie": "Littérature",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Les Misérables a été publié par Victor Hugo en 1862.",
+    "points": 1,
+    "question": "Qui a écrit Les Misérables ?",
+    "reponses": [
+      "Honoré de Balzac",
+      "Émile Zola",
+      "Victor Hugo",
+      "Gustave Flaubert"
+    ]
+  },
+  {
+    "id": 175,
+    "categorie": "Littérature",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "La scène de la madeleine se trouve dans Du côté de chez Swann (1913).",
+    "points": 2,
+    "question": "Dans quel roman Proust décrit-il sa madeleine trempée dans du thé ?",
+    "reponses": [
+      "Le Temps retrouvé",
+      "Du côté de chez Swann",
+      "À l'ombre des jeunes filles en fleurs",
+      "Sodome et Gomorrhe"
+    ]
+  },
+  {
+    "id": 176,
+    "categorie": "Littérature",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "La Modification de Michel Butor (1957) est un roman du Nouveau Roman écrit intégralement à la 2e personne.",
+    "points": 3,
+    "question": "Quel auteur français a écrit La Modification en 1957, roman entièrement à la 2e personne ?",
+    "reponses": [
+      "Alain Robbe-Grillet",
+      "Nathalie Sarraute",
+      "Michel Butor",
+      "Marguerite Duras"
+    ]
+  },
+  {
+    "id": 177,
+    "categorie": "Littérature",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Harry Potter à l'école des sorciers est sorti en 1997.",
+    "points": 2,
+    "question": "Quel est le premier roman de la saga Harry Potter ?",
+    "reponses": [
+      "Harry Potter et la Chambre des secrets",
+      "Harry Potter et l'école des sorciers",
+      "Harry Potter et le Prisonnier d'Azkaban",
+      "Harry Potter et la Coupe de Feu"
+    ]
+  },
+  {
+    "id": 178,
+    "categorie": "Littérature",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Le Petit Prince a été publié par Antoine de Saint-Exupéry en 1943 à New York.",
+    "points": 1,
+    "question": "Qui a écrit Le Petit Prince ?",
+    "reponses": [
+      "Jules Verne",
+      "Antoine de Saint-Exupéry",
+      "Jean de La Fontaine",
+      "Paul Éluard"
+    ]
+  },
+  {
+    "id": 179,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Louis XIV (1638-1715) est surnommé le Roi-Soleil, règne flamboyant depuis Versailles.",
+    "points": 2,
+    "question": "Quel roi de France a été surnommé le Roi-Soleil ?",
+    "reponses": [
+      "François Ier",
+      "Henri IV",
+      "Louis XIII",
+      "Louis XIV"
+    ]
+  },
+  {
+    "id": 180,
+    "categorie": "Histoire",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "La bataille de Marignan (1515) a vu la victoire de François Ier sur les Suisses en Italie.",
+    "points": 3,
+    "question": "Quelle bataille de 1515 symbolise les victoires de François Ier ?",
+    "reponses": [
+      "Pavie",
+      "Marignan",
+      "Azincourt",
+      "Bouvines"
+    ]
+  },
+  {
+    "id": 181,
+    "categorie": "Histoire",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "La peine de mort a été abolie en France le 9 octobre 1981, sous l'impulsion de Robert Badinter.",
+    "points": 2,
+    "question": "En quelle année la France a-t-elle aboli la peine de mort ?",
+    "reponses": [
+      "1974",
+      "1981",
+      "1985",
+      "1988"
+    ]
+  },
+  {
+    "id": 182,
+    "categorie": "Histoire",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Napoléon fut Premier consul de 1799 à 1804 avant de se proclamer empereur.",
+    "points": 1,
+    "question": "Qui était Napoléon Bonaparte avant de devenir empereur ?",
+    "reponses": [
+      "Général de division",
+      "Premier consul",
+      "Directeur",
+      "Maréchal"
+    ]
+  },
+  {
+    "id": 183,
+    "categorie": "Histoire",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Clisthène d'Athènes a réformé les institutions vers 508 av. J.-C. pour établir les bases de la démocratie.",
+    "points": 3,
+    "question": "Quel philosophe grec est considéré comme le père de la démocratie athénienne ?",
+    "reponses": [
+      "Socrate",
+      "Platon",
+      "Clisthène",
+      "Solon"
+    ]
+  },
+  {
+    "id": 184,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "L'Everest culmine à 8 849 mètres, dans l'Himalaya entre le Népal et le Tibet.",
+    "points": 1,
+    "question": "Quel est le plus haut sommet du monde ?",
+    "reponses": [
+      "K2",
+      "Mont Blanc",
+      "Everest",
+      "Aconcagua"
+    ]
+  },
+  {
+    "id": 185,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "La Sagrada Familia est la basilique emblématique de Barcelone, conçue par Antoni Gaudí.",
+    "points": 2,
+    "question": "Dans quelle ville se trouve la Sagrada Familia ?",
+    "reponses": [
+      "Madrid",
+      "Lisbonne",
+      "Barcelone",
+      "Valence"
+    ]
+  },
+  {
+    "id": 186,
+    "categorie": "Géographie",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "La Suède compte environ 221 800 îles, davantage que l'Indonésie ou les Philippines.",
+    "points": 3,
+    "question": "Quel pays possède le plus grand nombre d'îles au monde ?",
+    "reponses": [
+      "Indonésie",
+      "Suède",
+      "Philippines",
+      "Norvège"
+    ]
+  },
+  {
+    "id": 187,
+    "categorie": "Géographie",
+    "difficulte": "moyen",
+    "bonne": "D",
+    "explication": "Rabat est la capitale du Maroc. Casablanca est la plus grande ville.",
+    "points": 2,
+    "question": "Quelle est la capitale du Maroc ?",
+    "reponses": [
+      "Marrakech",
+      "Fès",
+      "Casablanca",
+      "Rabat"
+    ]
+  },
+  {
+    "id": 188,
+    "categorie": "Géographie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "Le Japon est surnommé le pays du soleil levant (Nippon), situé à l'est du continent asiatique.",
+    "points": 1,
+    "question": "Quel pays est surnommé le pays du soleil levant ?",
+    "reponses": [
+      "Chine",
+      "Corée du Sud",
+      "Japon",
+      "Thaïlande"
+    ]
+  },
+  {
+    "id": 189,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "L'ADN (acide désoxyribonucléique) est le support de l'information génétique dans toutes les cellules vivantes.",
+    "points": 2,
+    "question": "Quelle est la molécule porteuse de l'information génétique ?",
+    "reponses": [
+      "ARN",
+      "ATP",
+      "ADN",
+      "AMP"
+    ]
+  },
+  {
+    "id": 190,
+    "categorie": "Science",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Le tableau périodique officiel compte 118 éléments, le dernier étant l'oganesson (118).",
+    "points": 3,
+    "question": "Combien d'éléments chimiques compte le tableau périodique actuel ?",
+    "reponses": [
+      "103",
+      "110",
+      "118",
+      "124"
+    ]
+  },
+  {
+    "id": 191,
+    "categorie": "Science",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "La lumière met environ 8 minutes et 20 secondes pour parcourir les 150 millions de km Soleil-Terre.",
+    "points": 1,
+    "question": "Combien de temps met la lumière pour aller du Soleil à la Terre ?",
+    "reponses": [
+      "8 secondes",
+      "8 minutes",
+      "8 heures",
+      "8 jours"
+    ]
+  },
+  {
+    "id": 192,
+    "categorie": "Science",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Na vient du latin Natrium. Le sodium est l'élément de numéro atomique 11.",
+    "points": 2,
+    "question": "Quel est le symbole chimique du sodium ?",
+    "reponses": [
+      "So",
+      "Sd",
+      "Na",
+      "N"
+    ]
+  },
+  {
+    "id": 193,
+    "categorie": "Science",
+    "difficulte": "difficile",
+    "bonne": "C",
+    "explication": "Niels Bohr a proposé son modèle planétaire de l'atome en 1913.",
+    "points": 3,
+    "question": "Quel scientifique a proposé le modèle de l'atome avec électrons en orbites circulaires en 1913 ?",
+    "reponses": [
+      "Ernest Rutherford",
+      "J.J. Thomson",
+      "Niels Bohr",
+      "Max Planck"
+    ]
+  },
+  {
+    "id": 194,
+    "categorie": "Série",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Les Soprano (The Sopranos) est une série HBO diffusée de 1999 à 2007.",
+    "points": 2,
+    "question": "Dans quelle série le personnage de Tony Soprano apparaît-il ?",
+    "reponses": [
+      "Boardwalk Empire",
+      "The Wire",
+      "Les Soprano",
+      "Dexter"
+    ]
+  },
+  {
+    "id": 195,
+    "categorie": "Série",
+    "difficulte": "facile",
+    "bonne": "B",
+    "explication": "Walter White (Bryan Cranston) est le personnage principal de Breaking Bad (AMC, 2008-2013).",
+    "points": 1,
+    "question": "Dans quelle série peut-on voir le personnage de Walter White ?",
+    "reponses": [
+      "Dexter",
+      "Breaking Bad",
+      "Better Call Saul",
+      "Ozark"
+    ]
+  },
+  {
+    "id": 196,
+    "categorie": "Série",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Benedict Cumberbatch incarne Sherlock Holmes dans la série Sherlock de la BBC (2010-2017).",
+    "points": 3,
+    "question": "Quel acteur jouait Sherlock Holmes dans la série BBC à partir de 2010 ?",
+    "reponses": [
+      "Hugh Laurie",
+      "Benedict Cumberbatch",
+      "Idris Elba",
+      "Tom Hiddleston"
+    ]
+  },
+  {
+    "id": 197,
+    "categorie": "Culture pop",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "La famille Simpson habite au 742 Evergreen Terrace à Springfield.",
+    "points": 2,
+    "question": "Quel est le nom de la famille dans les Simpson ?",
+    "reponses": [
+      "Les Griffin",
+      "Les Bouvier",
+      "Les Simpson",
+      "Les Flanders"
+    ]
+  },
+  {
+    "id": 198,
+    "categorie": "Culture pop",
+    "difficulte": "facile",
+    "bonne": "A",
+    "explication": "Jolly Jumper est le cheval de Lucky Luke, le cheval le plus intelligent du monde.",
+    "points": 1,
+    "question": "Quel est le nom du cheval de Lucky Luke ?",
+    "reponses": [
+      "Jolly Jumper",
+      "Silver",
+      "Bucéphale",
+      "Tornado"
+    ]
+  },
+  {
+    "id": 199,
+    "categorie": "Gastronomie",
+    "difficulte": "facile",
+    "bonne": "C",
+    "explication": "La région Champagne, autour de Reims et Épernay, est le seul lieu AOC du champagne.",
+    "points": 1,
+    "question": "Quelle est la principale région productrice de champagne en France ?",
+    "reponses": [
+      "Bourgogne",
+      "Alsace",
+      "Champagne-Ardenne",
+      "Bordelais"
+    ]
+  },
+  {
+    "id": 200,
+    "categorie": "Gastronomie",
+    "difficulte": "moyen",
+    "bonne": "C",
+    "explication": "Michel Guérard est l'un des pères fondateurs de la nouvelle cuisine.",
+    "points": 2,
+    "question": "Quel chef est considéré comme le père de la nouvelle cuisine des années 1970 ?",
+    "reponses": [
+      "Paul Bocuse",
+      "Joël Robuchon",
+      "Michel Guérard",
+      "Fernand Point"
+    ]
+  },
+  {
+    "id": 201,
+    "categorie": "Gastronomie",
+    "difficulte": "difficile",
+    "bonne": "B",
+    "explication": "Le beurre blanc est une sauce de la cuisine de la Loire, née à Saint-Julien-de-Concelles.",
+    "points": 3,
+    "question": "Dans quelle région française est originaire le beurre blanc ?",
+    "reponses": [
+      "Bretagne",
+      "Pays de la Loire",
+      "Normandie",
+      "Poitou"
+    ]
+  },
+  {
+    "id": 202,
+    "categorie": "Gastronomie",
+    "difficulte": "moyen",
+    "bonne": "B",
+    "explication": "Le Neufchâtel est un fromage normand AOP reconnaissable à sa forme de coeur.",
+    "points": 2,
+    "question": "Quel fromage français a la forme d'un coeur ?",
+    "reponses": [
+      "Camembert",
+      "Neufchâtel",
+      "Brie",
+      "Époisses"
+    ]
+  }
+]
