@@ -2,7 +2,7 @@
 
 Application de quiz culture générale jouable dans un navigateur, sans installation ni dépendance. 20 questions aléatoires par partie, chrono 15 secondes par question, Hall of Fame local.
 
-**Démo live** :(http://didoune.com/Quiz-Amann/index.html)
+**Démo live** : [à compléter après déploiement GitHub Pages]
 
 ---
 

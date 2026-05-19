@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz — Culture Générale</title>
+  <title>Quiz Amann</title>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { min-height: 100vh; }
-    #root { min-height: 100vh; }
-  </style>
+  <style>* { box-sizing: border-box; margin: 0; padding: 0; } body { min-height: 100vh; } #root { min-height: 100vh; }</style>
 </head>
 <body>
   <div id="root"></div>
@@ -20,13 +16,34 @@ const { useState, useEffect, useRef, useCallback } = React;
 
 const TIMER_MAX = 15;
 const LETTERS   = ["A","B","C","D"];
+const PICK = { facile: 8, moyen: 14, difficile: 8 };
+const SEEN_KEY  = "quiz_seen";
 
 function pickQuestions(db) {
   const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
-  const facile  = shuffle(db.filter(q => q.difficulte === "facile")).slice(0, 5);
-  const moyen   = shuffle(db.filter(q => q.difficulte === "moyen")).slice(0, 10);
-  const diff    = shuffle(db.filter(q => q.difficulte === "difficile")).slice(0, 5);
-  return shuffle([...facile, ...moyen, ...diff]);
+
+  let seen = { facile: [], moyen: [], difficile: [] };
+  try { const s = JSON.parse(localStorage.getItem(SEEN_KEY) || "null"); if (s) seen = s; } catch {}
+  if (!seen.facile)    seen.facile    = [];
+  if (!seen.moyen)     seen.moyen     = [];
+  if (!seen.difficile) seen.difficile = [];
+
+  const pick = (diff, n) => {
+    const pool = db.filter(q => q.difficulte === diff);
+    let unseen = pool.filter(q => !seen[diff].includes(q.id));
+    if (unseen.length < n) { seen[diff] = []; unseen = pool; }
+    const selected = shuffle(unseen).slice(0, n);
+    seen[diff] = [...seen[diff], ...selected.map(q => q.id)];
+    return selected;
+  };
+
+  const selected = shuffle([
+    ...pick("facile", PICK.facile),
+    ...pick("moyen",  PICK.moyen),
+    ...pick("difficile", PICK.difficile),
+  ]);
+  try { localStorage.setItem(SEEN_KEY, JSON.stringify(seen)); } catch {}
+  return selected;
 }
 
 function calcScore(points, timeLeft) {
@@ -36,111 +53,136 @@ function calcScore(points, timeLeft) {
 const makeStyles = (dark) => `
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: ${dark?"#1a2340":"#f5f2eb"}; color: ${dark?"#dde4f0":"#1a1a1a"}; font-family:'DM Sans',sans-serif; min-height:100vh; transition:background 0.3s,color 0.3s; }
+  body { background: ${dark?"#1a2e38":"#f5f0e8"}; color: ${dark?"#e8f0f0":"#1a1a1a"}; font-family:'DM Sans',sans-serif; min-height:100vh; transition:background 0.3s,color 0.3s; }
   .app { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 16px; }
-  .card { width:100%; max-width:680px; background:${dark?"#243058":"#ffffff"}; border:2px solid ${dark?"#344070":"#1a1a1a"}; border-radius:6px; padding:40px; box-shadow:${dark?"6px 6px 0 #111828":"6px 6px 0 #1a1a1a"}; transition:background 0.3s,border-color 0.3s; }
+  .card { width:100%; max-width:680px; background:${dark?"#233840":"#fffdf7"}; border:1.5px solid ${dark?"#2e4a54":"#ddd5c0"}; border-radius:6px; padding:40px; box-shadow:${dark?"0 4px 24px rgba(0,0,0,0.4)":"0 2px 20px rgba(38,70,83,0.1)"}; transition:background 0.3s,border-color 0.3s; }
 
-  .settings-btn { position:fixed; top:16px; right:16px; width:40px; height:40px; background:${dark?"#344070":"#fff"}; border:1.5px solid ${dark?"#3e508a":"#ccc"}; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:100; color:${dark?"#8898c8":"#666"}; font-size:18px; transition:all 0.15s; }
-  .settings-btn:hover { border-color:#e8400c; color:#e8400c; }
-  .settings-panel { position:fixed; top:64px; right:16px; background:${dark?"#243058":"#fff"}; border:1.5px solid ${dark?"#344070":"#ddd"}; border-radius:6px; padding:20px 24px; z-index:99; min-width:200px; box-shadow:${dark?"4px 4px 0 #111828":"4px 4px 0 #1a1a1a"}; animation:fadeIn 0.15s ease; }
-  .settings-title { font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:2px; color:${dark?"#7888b8":"#888"}; margin-bottom:16px; }
-  .toggle-row { display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:14px; color:${dark?"#aab4d8":"#444"}; font-weight:500; }
+  .settings-btn { position:fixed; top:16px; right:16px; width:40px; height:40px; background:${dark?"#2e4a54":"#fff"}; border:1.5px solid ${dark?"#3a5e6a":"#ccc"}; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:100; color:${dark?"#7ab0b8":"#666"}; font-size:18px; transition:all 0.15s; }
+  .settings-btn:hover { border-color:#c8432a; color:#c8432a; }
+  .settings-panel { position:fixed; top:64px; right:16px; background:${dark?"#233840":"#fff"}; border:1.5px solid ${dark?"#2e4a54":"#ddd"}; border-radius:6px; padding:20px 24px; z-index:99; min-width:200px; box-shadow:${dark?"0 4px 16px rgba(0,0,0,0.3)":"0 2px 12px rgba(0,0,0,0.1)"}; animation:fadeIn 0.15s ease; }
+  .settings-title { font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:2px; color:${dark?"#5a8890":"#888"}; margin-bottom:16px; }
+  .toggle-row { display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:14px; color:${dark?"#7ab0b8":"#444"}; font-weight:500; }
   .toggle { position:relative; width:44px; height:24px; flex-shrink:0; }
   .toggle input { opacity:0; width:0; height:0; }
-  .toggle-slider { position:absolute; inset:0; background:${dark?"#3e508a":"#ddd"}; border-radius:24px; cursor:pointer; transition:background 0.2s; }
+  .toggle-slider { position:absolute; inset:0; background:${dark?"#3a5e6a":"#ddd"}; border-radius:24px; cursor:pointer; transition:background 0.2s; }
   .toggle-slider::before { content:''; position:absolute; height:18px; width:18px; left:3px; top:3px; background:white; border-radius:50%; transition:transform 0.2s; }
-  .toggle input:checked + .toggle-slider { background:#e8400c; }
+  .toggle input:checked + .toggle-slider { background:#e76f51; }
   .toggle input:checked + .toggle-slider::before { transform:translateX(20px); }
 
-  .home-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(64px,14vw,108px); line-height:0.88; letter-spacing:3px; color:${dark?"#e8400c":"#1a1a1a"}; margin-bottom:6px; }
-  .home-sub { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:${dark?"#6880b8":"#888"}; margin-bottom:40px; }
+  .home-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(64px,14vw,108px); line-height:0.88; letter-spacing:3px; color:${dark?"#e76f51":"#1a1a1a"}; margin-bottom:6px; }
+  .home-sub { font-size:12px; letter-spacing:3px; text-transform:uppercase; color:${dark?"#5a8890":"#888"}; margin-bottom:40px; }
   .home-rules { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:40px; }
-  .rule-item { background:${dark?"#1a2340":"#f5f2eb"}; border:1.5px solid ${dark?"#344070":"#ddd"}; border-radius:4px; padding:14px 16px; font-size:13px; color:${dark?"#8898c8":"#555"}; }
-  .rule-item strong { display:block; font-family:'Bebas Neue',sans-serif; font-size:28px; color:#e8400c; letter-spacing:1px; margin-bottom:1px; }
+  .rule-item { background:${dark?"#1a2e38":"#f5f0e8"}; border:1.5px solid ${dark?"#2e4a54":"#ddd"}; border-radius:4px; padding:14px 16px; font-size:13px; color:${dark?"#7ab0b8":"#555"}; }
+  .rule-item strong { display:block; font-family:'Bebas Neue',sans-serif; font-size:28px; color:#c8432a; letter-spacing:1px; margin-bottom:1px; }
 
-  .btn-primary { width:100%; padding:18px; background:#e8400c; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:3px; border:2px solid ${dark?"#e8400c":"#1a1a1a"}; border-radius:4px; cursor:pointer; transition:all 0.12s; box-shadow:3px 3px 0 ${dark?"#7a1a00":"#1a1a1a"}; }
-  .btn-primary:hover { transform:translate(-1px,-1px); box-shadow:4px 4px 0 ${dark?"#7a1a00":"#1a1a1a"}; }
-  .btn-primary:active { transform:translate(1px,1px); box-shadow:2px 2px 0 ${dark?"#7a1a00":"#1a1a1a"}; }
+  .btn-primary { width:100%; padding:18px; background:#e76f51; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:3px; border:2px solid ${dark?"#e76f51":"#e76f51"}; border-radius:4px; cursor:pointer; transition:all 0.12s; box-shadow:${dark?"0 2px 12px rgba(231,111,81,0.35)":"0 2px 8px rgba(231,111,81,0.25)"}; }
+  .btn-primary:hover { transform:translate(-1px,-1px); box-shadow:${dark?"0 3px 16px rgba(231,111,81,0.4)":"0 3px 12px rgba(231,111,81,0.3)"}; }
+  .btn-primary:active { transform:translate(1px,1px); box-shadow:${dark?"0 1px 8px rgba(231,111,81,0.3)":"0 1px 6px rgba(231,111,81,0.2)"}; }
   .btn-primary:disabled { opacity:0.5; cursor:default; transform:none; }
-  .btn-secondary { padding:12px 24px; background:transparent; color:${dark?"#777":"#444"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; border:1.5px solid ${dark?"#3e508a":"#bbb"}; border-radius:4px; cursor:pointer; transition:all 0.12s; }
-  .btn-secondary:hover { border-color:#e8400c; color:#e8400c; }
+  .btn-secondary { padding:12px 24px; background:transparent; color:${dark?"#777":"#444"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; border:1.5px solid ${dark?"#3a5e6a":"#bbb"}; border-radius:4px; cursor:pointer; transition:all 0.12s; }
+  .btn-secondary:hover { border-color:#c8432a; color:#c8432a; }
 
   .quiz-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:24px; }
-  .q-counter { font-family:'Bebas Neue',sans-serif; font-size:36px; color:${dark?"#dde4f0":"#1a1a1a"}; letter-spacing:1px; }
-  .q-counter span { font-size:18px; color:${dark?"#6880b8":"#999"}; }
-  .q-score-live { font-family:'Bebas Neue',sans-serif; font-size:22px; color:${dark?"#6880b8":"#999"}; letter-spacing:1px; }
-  .categorie-badge { display:inline-block; font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:3px; text-transform:uppercase; color:#fff; background:#e8400c; border-radius:3px; padding:4px 12px; }
+  .q-counter { font-family:'Bebas Neue',sans-serif; font-size:36px; color:${dark?"#e8f0f0":"#1a1a1a"}; letter-spacing:1px; }
+  .q-counter span { font-size:18px; color:${dark?"#5a8890":"#999"}; }
+  .q-score-live { font-family:'Bebas Neue',sans-serif; font-size:22px; color:${dark?"#5a8890":"#999"}; letter-spacing:1px; }
+  .categorie-badge { display:inline-block; font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:3px; text-transform:uppercase; color:#fff; background:${dark?"#1a4a42":"#e8e4de"}; color:${dark?"#7ab0b8":"#666"}; border:1px solid ${dark?"#3a5e6a":"#d0ccc4"}; border-radius:3px; padding:4px 12px; }
 
-  .timer-bar-wrap { height:6px; background:${dark?"#1e2d50":"#eee"}; border-radius:3px; margin-bottom:28px; overflow:hidden; border:1px solid ${dark?"#344070":"#ddd"}; }
+  .timer-bar-wrap { height:6px; background:${dark?"#1a2e38":"#eee"}; border-radius:3px; margin-bottom:28px; overflow:hidden; border:1px solid ${dark?"#2e4a54":"#ddd"}; }
   .timer-bar { height:100%; border-radius:3px; transition:width 0.1s linear,background-color 0.3s; }
   .timer-digits { font-family:'Bebas Neue',sans-serif; font-size:52px; letter-spacing:2px; transition:color 0.3s; text-align:right; line-height:1; margin-bottom:6px; }
-  .question-text { font-size:clamp(17px,3vw,21px); font-weight:600; line-height:1.4; color:${dark?"#dde4f0":"#1a1a1a"}; margin-bottom:24px; min-height:64px; }
+  .question-text { font-size:clamp(17px,3vw,21px); font-weight:600; line-height:1.4; color:${dark?"#e8f0f0":"#1a1a1a"}; margin-bottom:24px; min-height:64px; }
 
   .answers { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-  .answer-btn { display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:${dark?"#1a2340":"#f9f8f5"}; border:1.5px solid ${dark?"#344070":"#ccc"}; border-radius:4px; color:${dark?"#dde4f0":"#222"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; text-align:left; cursor:pointer; transition:all 0.12s; line-height:1.35; }
-  .answer-btn:not(.disabled):hover { background:${dark?"#1e2d50":"#fff5e6"}; border-color:#e8400c; color:${dark?"#fff":"#1a1a1a"}; }
-  .answer-btn .letter { font-family:'Bebas Neue',sans-serif; font-size:18px; color:#e8400c; min-width:18px; line-height:1.2; flex-shrink:0; }
-  .answer-btn.correct { background:${dark?"#0d2b1e":"#edfaf1"}; border-color:#27ae60; color:${dark?"#5fd98a":"#1a6635"}; }
-  .answer-btn.correct .letter { color:#27ae60; }
-  .answer-btn.wrong { background:${dark?"#3a1520":"#fdf0ee"}; border-color:#e8400c; color:${dark?"#ff7060":"#c0391a"}; }
-  .answer-btn.wrong .letter { color:#e8400c; }
+  .answer-btn { display:flex; align-items:flex-start; gap:10px; padding:14px 16px; background:${dark?"#1a2e38":"#f5f0e8"}; border:1.5px solid ${dark?"#2e4a54":"#ccc"}; border-radius:4px; color:${dark?"#e8f0f0":"#222"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; text-align:left; cursor:pointer; transition:all 0.12s; line-height:1.35; }
+  .answer-btn:not(.disabled):hover { background:${dark?"#1a2e38":"#fff5e6"}; border-color:#c8432a; color:${dark?"#fff":"#1a1a1a"}; }
+  .answer-btn .letter { font-family:'Bebas Neue',sans-serif; font-size:18px; color:#c8432a; min-width:18px; line-height:1.2; flex-shrink:0; }
+  .answer-btn.correct { background:${dark?"#0e2828":"#e8f5f3"}; border-color:#3a9a6e; color:${dark?"#5ec4b8":"#1a4a42"}; }
+  .answer-btn.correct .letter { color:#3a9a6e; }
+  .answer-btn.wrong { background:${dark?"#2e1c18":"#faf0ee"}; border-color:#c8432a; color:${dark?"#e07060":"#a83a28"}; }
+  .answer-btn.wrong .letter { color:#c8432a; }
   .answer-btn.disabled { cursor:default; pointer-events:none; }
 
   .feedback-bar { margin-top:16px; padding:12px 16px; border-radius:4px; font-size:14px; font-weight:600; text-align:center; animation:fadeIn 0.2s ease; }
-  .feedback-bar.correct { background:${dark?"#0d2b1e":"#edfaf1"}; color:${dark?"#5fd98a":"#1a6635"}; border:1.5px solid #27ae60; }
-  .feedback-bar.wrong   { background:${dark?"#3a1520":"#fdf0ee"}; color:${dark?"#ff7060":"#c0391a"}; border:1.5px solid #e8400c; }
-  .feedback-bar.timeout { background:${dark?"#2a2012":"#fff8e6"}; color:${dark?"#f0b030":"#b07800"}; border:1.5px solid #f0a800; }
+  .feedback-bar.correct { background:${dark?"#0e2828":"#e8f5f3"}; color:${dark?"#5ec4b8":"#1a4a42"}; border:1.5px solid #3a9a6e; }
+  .feedback-bar.wrong   { background:${dark?"#2e1c18":"#faf0ee"}; color:${dark?"#e07060":"#a83a28"}; border:1.5px solid #c8432a; }
+  .feedback-bar.timeout { background:${dark?"#252010":"#fdf5e0"}; color:${dark?"#e9c46a":"#b07800"}; border:1.5px solid #f0a800; }
+  .btn-next { margin-top:10px; width:100%; padding:12px; background:transparent; color:${dark?"#5a8890":"#888"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; border:1.5px solid ${dark?"#2e4a54":"#ccc"}; border-radius:4px; cursor:pointer; transition:all 0.12s; letter-spacing:0.5px; }
+  .btn-next:hover { border-color:#c8432a; color:#c8432a; }
 
   @keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
 
-  .result-score { font-family:'Bebas Neue',sans-serif; font-size:clamp(72px,18vw,120px); line-height:0.88; color:#e8400c; margin:12px 0 4px; }
-  .result-label { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:${dark?"#6880b8":"#999"}; margin-bottom:6px; }
-  .result-details { font-size:14px; color:${dark?"#6880b8":"#777"}; margin-bottom:32px; }
-  .result-details span { color:${dark?"#dde4f0":"#1a1a1a"}; font-weight:600; }
+  .result-score { font-family:'Bebas Neue',sans-serif; font-size:clamp(72px,18vw,120px); line-height:0.88; color:#c8432a; margin:12px 0 4px; }
+  .result-label { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:${dark?"#5a8890":"#999"}; margin-bottom:6px; }
+  .result-details { font-size:14px; color:${dark?"#5a8890":"#777"}; margin-bottom:32px; }
+  .result-details span { color:${dark?"#e8f0f0":"#1a1a1a"}; font-weight:600; }
 
   .hof-form { margin-bottom:32px; }
-  .hof-form p { font-size:13px; color:${dark?"#6880b8":"#666"}; margin-bottom:10px; font-weight:500; }
+  .hof-form p { font-size:13px; color:${dark?"#5a8890":"#666"}; margin-bottom:10px; font-weight:500; }
   .hof-input-row { display:flex; gap:10px; }
-  .hof-input { flex:1; padding:13px 16px; background:${dark?"#1a2340":"#f9f8f5"}; border:1.5px solid ${dark?"#344070":"#ccc"}; border-radius:4px; color:${dark?"#dde4f0":"#1a1a1a"}; font-family:'DM Sans',sans-serif; font-size:15px; outline:none; transition:border-color 0.15s; }
-  .hof-input:focus { border-color:#e8400c; }
-  .hof-input::placeholder { color:${dark?"#445588":"#bbb"}; }
-  .btn-submit { padding:13px 24px; background:#e8400c; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:1px; border:2px solid ${dark?"#e8400c":"#1a1a1a"}; border-radius:4px; cursor:pointer; transition:all 0.12s; white-space:nowrap; box-shadow:2px 2px 0 ${dark?"#7a1a00":"#1a1a1a"}; }
-  .btn-submit:hover { transform:translate(-1px,-1px); box-shadow:3px 3px 0 ${dark?"#7a1a00":"#1a1a1a"}; }
+  .hof-input { flex:1; padding:13px 16px; background:${dark?"#1a2e38":"#f5f0e8"}; border:1.5px solid ${dark?"#2e4a54":"#ccc"}; border-radius:4px; color:${dark?"#e8f0f0":"#1a1a1a"}; font-family:'DM Sans',sans-serif; font-size:15px; outline:none; transition:border-color 0.15s; }
+  .hof-input:focus { border-color:#c8432a; }
+  .hof-input::placeholder { color:${dark?"#3a6070":"#bbb"}; }
+  .btn-submit { padding:13px 24px; background:#e76f51; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:1px; border:2px solid ${dark?"#e76f51":"#e76f51"}; border-radius:4px; cursor:pointer; transition:all 0.12s; white-space:nowrap; box-shadow:${dark?"0 1px 8px rgba(231,111,81,0.3)":"0 1px 6px rgba(231,111,81,0.2)"}; }
+  .btn-submit:hover { transform:translate(-1px,-1px); box-shadow:${dark?"0 2px 12px rgba(231,111,81,0.35)":"0 2px 8px rgba(231,111,81,0.25)"}; }
   .btn-submit:disabled { opacity:0.35; cursor:default; transform:none; box-shadow:none; }
 
   .hof-title { font-family:'Bebas Neue',sans-serif; font-size:30px; letter-spacing:3px; color:${dark?"#444":"#444"}; margin-bottom:14px; }
   .hof-list { list-style:none; }
-  .hof-item { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid ${dark?"#1e2d50":"#eee"}; font-size:14px; animation:slideIn 0.3s ease backwards; }
+  .hof-item { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid ${dark?"#1a2e38":"#eee"}; font-size:14px; animation:slideIn 0.3s ease backwards; }
   @keyframes slideIn { from{opacity:0;transform:translateX(-8px)} to{opacity:1;transform:translateX(0)} }
-  .hof-rank { font-family:'Bebas Neue',sans-serif; font-size:22px; min-width:28px; color:${dark?"#445588":"#ccc"}; }
-  .hof-rank.gold{color:#e8a000} .hof-rank.silver{color:#888} .hof-rank.bronze{color:#b87333}
-  .hof-name { flex:1; color:${dark?"#aab4d8":"#333"}; font-weight:500; }
-  .hof-name.me { color:#e8400c; font-weight:700; }
-  .hof-pts { font-family:'Bebas Neue',sans-serif; font-size:22px; color:${dark?"#5570a8":"#999"}; }
-  .hof-pts.me { color:#e8400c; }
-  .hof-time { font-size:11px; color:${dark?"#445588":"#bbb"}; min-width:60px; text-align:right; }
-  .hof-empty { font-size:13px; color:${dark?"#445588":"#bbb"}; padding:20px 0; text-align:center; font-style:italic; }
+  .hof-rank { font-family:'Bebas Neue',sans-serif; font-size:22px; min-width:28px; color:${dark?"#3a6070":"#ccc"}; }
+  .hof-rank.gold{color:#e9c46a} .hof-rank.silver{color:#888} .hof-rank.bronze{color:#b87333}
+  .hof-name { flex:1; color:${dark?"#7ab0b8":"#333"}; font-weight:500; }
+  .hof-name.me { color:#c8432a; font-weight:700; }
+  .hof-pts { font-family:'Bebas Neue',sans-serif; font-size:22px; color:${dark?"#3a6070":"#999"}; }
+  .hof-pts.me { color:#c8432a; }
+  .hof-time { font-size:11px; color:${dark?"#3a6070":"#bbb"}; min-width:60px; text-align:right; }
+  .hof-empty { font-size:13px; color:${dark?"#3a6070":"#bbb"}; padding:20px 0; text-align:center; font-style:italic; }
 
   .result-actions { display:flex; gap:10px; margin-top:32px; }
   .progress-dots { display:flex; gap:5px; margin-bottom:20px; flex-wrap:wrap; }
-  .dot { width:9px; height:9px; border-radius:50%; background:${dark?"#1e2d50":"#e0ddd6"}; transition:background 0.3s; border:1px solid ${dark?"#344070":"#ccc"}; }
-  .dot.correct{background:#27ae60;border-color:#27ae60} .dot.wrong{background:#e8400c;border-color:#e8400c} .dot.active{background:#f0a800;border-color:#f0a800}
-  .spinner { width:32px; height:32px; border:3px solid ${dark?"#344070":"#eee"}; border-top-color:#e8400c; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 12px; }
+  .dot { width:9px; height:9px; border-radius:50%; background:${dark?"#1a2e38":"#ddd5c0"}; transition:background 0.3s; border:1px solid ${dark?"#2e4a54":"#ccc"}; }
+  .dot.correct{background:#2a9d8f;border-color:#2a9d8f} .dot.wrong{background:#e76f51;border-color:#c8432a} .dot.active{background:#d09030;border-color:#d09030}
+  .spinner { width:32px; height:32px; border:3px solid ${dark?"#2e4a54":"#eee"}; border-top-color:#c8432a; border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 12px; }
   @keyframes spin { to{transform:rotate(360deg)} }
+  @media (hover: none) {
+    .answer-btn:not(.disabled):hover { background:${dark?"#1a2e38":"#f5f0e8"}; border-color:${dark?"#2e4a54":"#ccc"}; color:${dark?"#e8f0f0":"#222"}; }
+    .btn-primary:hover { transform:none; box-shadow:${dark?"0 2px 12px rgba(231,111,81,0.35)":"0 2px 8px rgba(231,111,81,0.25)"}; }
+    .btn-next:hover { border-color:${dark?"#2e4a54":"#ccc"}; color:${dark?"#5a8890":"#888"}; }
+    .btn-secondary:hover { border-color:${dark?"#3a5e6a":"#bbb"}; color:${dark?"#777":"#444"}; }
+    .settings-btn:hover { border-color:${dark?"#3a5e6a":"#ccc"}; color:${dark?"#7ab0b8":"#666"}; }
+  }
 `;
 
 // ─── COMPOSANTS ──────────────────────────────────────────────────────────────
 
-function SettingsPanel({ dark, onToggleDark }) {
+function SettingsPanel({ dark, onToggleDark, onResetSeen }) {
+  const [resetDone, setResetDone] = useState(false);
+  const handleReset = () => {
+    onResetSeen();
+    setResetDone(true);
+    setTimeout(() => setResetDone(false), 2000);
+  };
   return (
     <div className="settings-panel" onClick={e => e.stopPropagation()}>
       <div className="settings-title">Réglages</div>
-      <div className="toggle-row">
+      <div className="toggle-row" style={{marginBottom:"16px"}}>
         <span>Mode sombre</span>
         <label className="toggle">
           <input type="checkbox" checked={dark} onChange={onToggleDark} />
           <span className="toggle-slider" />
         </label>
+      </div>
+      <div style={{borderTop:`1px solid ${dark?"#2e4a54":"#eee"}`,paddingTop:"14px"}}>
+        <button
+          onClick={handleReset}
+          style={{width:"100%",padding:"9px 12px",background:resetDone?"#e8f5f3":"transparent",
+            border:`1.5px solid ${resetDone?"#2a9d8f":dark?"#2e4a54":"#ddd"}`,borderRadius:"4px",
+            color:resetDone?"#1a4a42":dark?"#7ab0b8":"#666",fontSize:"13px",fontWeight:"600",
+            cursor:"pointer",transition:"all 0.2s",fontFamily:"DM Sans,sans-serif",letterSpacing:"0.3px"}}>
+          {resetDone ? "✓ Historique effacé" : "Réinitialiser les questions vues"}
+        </button>
       </div>
     </div>
   );
@@ -149,10 +191,10 @@ function SettingsPanel({ dark, onToggleDark }) {
 function HomePage({ onStart, hallOfFame, loading }) {
   return (
     <div className="card">
-      <div className="home-title">QUIZ</div>
-      <div className="home-sub">Culture générale — 20 questions</div>
+      <div className="home-title">QUIZ<br/>AMANN</div>
+      <div className="home-sub">Culture générale — 30 questions</div>
       <div className="home-rules">
-        <div className="rule-item"><strong>20</strong>Questions aléatoires</div>
+        <div className="rule-item"><strong>30</strong>Questions aléatoires</div>
         <div className="rule-item"><strong>15s</strong>Par question</div>
         <div className="rule-item"><strong>1–3</strong>Points par bonne réponse</div>
         <div className="rule-item"><strong>+1</strong>Bonus de rapidité</div>
@@ -199,11 +241,19 @@ function QuizPage({ questions, onFinish }) {
     setResults(nr);
     const ns = Math.round((score+earned)*100)/100;
     setScore(ns);
-    setTimeout(() => {
-      if (current+1 >= questions.length) { onFinish(nr, ns); return; }
-      setCurrent(c=>c+1); setTimeLeft(TIMER_MAX); setAnswered(null);
+    // Le passage à la question suivante se fait via le bouton Suivante (ou auto après 5s)
+    timerRef.current = setTimeout(() => {
+      goNext(nr, ns);
     }, 5000);
   }, [answered, q, results, current, questions.length, onFinish, score]);
+
+  const goNext = useCallback((nr, ns) => {
+    clearTimeout(timerRef.current);
+    const r = nr !== undefined ? nr : results;
+    const s = ns !== undefined ? ns : score;
+    if (current+1 >= questions.length) { onFinish(r, s); return; }
+    setCurrent(c => c+1); setTimeLeft(TIMER_MAX); setAnswered(null);
+  }, [current, questions.length, onFinish, results, score]);
 
   useEffect(() => {
     setTimeLeft(TIMER_MAX);
@@ -217,7 +267,7 @@ function QuizPage({ questions, onFinish }) {
   }, [current]);
 
   const pct = (timeLeft/TIMER_MAX)*100;
-  const timerColor = pct>50?"#27ae60":pct>25?"#e8a000":"#e8400c";
+  const timerColor = pct>50?"#2a9d8f":pct>25?"#f4a261":"#e76f51";
 
   return (
     <div className="card">
@@ -255,9 +305,14 @@ function QuizPage({ questions, onFinish }) {
         })}
       </div>
       {answered && (
-        <div className={`feedback-bar ${answered.isTimeout?"timeout":answered.correct?"correct":"wrong"}`}>
-          {answered.isTimeout ? "Temps écoulé !" : answered.correct ? `+${answered.earned.toFixed(2)} pts` : `Raté — la réponse était ${q.bonne}`}
-        </div>
+        <>
+          <div className={`feedback-bar ${answered.isTimeout?"timeout":answered.correct?"correct":"wrong"}`}>
+            {answered.isTimeout ? "Temps écoulé !" : answered.correct ? `+${answered.earned.toFixed(2)} pts` : `Raté — la réponse était ${q.bonne}`}
+          </div>
+          <button className="btn-next" onClick={() => goNext()}>
+            {current+1 >= questions.length ? "Voir les résultats →" : "Question suivante →"}
+          </button>
+        </>
       )}
     </div>
   );
@@ -389,7 +444,7 @@ function App() {
       <style>{makeStyles(dark)}</style>
       <div className="app" onClick={() => settingsOpen && setSettings(false)}>
         <button className="settings-btn" onClick={e=>{e.stopPropagation();setSettings(o=>!o)}} title="Réglages">⚙</button>
-        {settingsOpen && <SettingsPanel dark={dark} onToggleDark={toggleDark} />}
+        {settingsOpen && <SettingsPanel dark={dark} onToggleDark={toggleDark} onResetSeen={() => { try { localStorage.removeItem(SEEN_KEY); } catch {} }} />}
 
         {screen==="home" && <HomePage onStart={startQuiz} hallOfFame={hallOfFame} loading={dbLoading} />}
         {screen==="quiz" && <QuizPage key={questions[0]?.id} questions={questions} onFinish={(r,s)=>{setResults(r);setFinalScore(s);setScreen("result");}} />}
