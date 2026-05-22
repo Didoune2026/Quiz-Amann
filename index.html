@@ -16,7 +16,7 @@ const { useState, useEffect, useRef, useCallback } = React;
 
 const TIMER_MAX = 15;
 const LETTERS   = ["A","B","C","D"];
-const PICK = { facile: 8, moyen: 14, difficile: 8 };
+const PICK = { facile: 4, moyen: 7, difficile: 4 };
 const SEEN_KEY  = "quiz_seen";
 
 function pickQuestions(db) {
@@ -57,6 +57,8 @@ const makeStyles = (dark) => `
   .app { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 16px; }
   .card { width:100%; max-width:680px; background:${dark?"#233840":"#fffdf7"}; border:1.5px solid ${dark?"#2e4a54":"#ddd5c0"}; border-radius:6px; padding:40px; box-shadow:${dark?"0 4px 24px rgba(0,0,0,0.4)":"0 2px 20px rgba(38,70,83,0.1)"}; transition:background 0.3s,border-color 0.3s; }
 
+  .back-btn { position:fixed; top:16px; left:16px; height:36px; padding:0 14px; background:${dark?"#233840":"#fff"}; border:1.5px solid ${dark?"#3a5e6a":"#ddd"}; border-radius:18px; display:flex; align-items:center; gap:6px; cursor:pointer; z-index:100; color:${dark?"#7ab0b8":"#666"}; font-size:13px; font-family:'DM Sans',sans-serif; font-weight:500; text-decoration:none; transition:all 0.15s; }
+  .back-btn:hover { border-color:#e76f51; color:#e76f51; }
   .settings-btn { position:fixed; top:16px; right:16px; width:40px; height:40px; background:${dark?"#2e4a54":"#fff"}; border:1.5px solid ${dark?"#3a5e6a":"#ccc"}; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:100; color:${dark?"#7ab0b8":"#666"}; font-size:18px; transition:all 0.15s; }
   .settings-btn:hover { border-color:#c8432a; color:#c8432a; }
   .settings-panel { position:fixed; top:64px; right:16px; background:${dark?"#233840":"#fff"}; border:1.5px solid ${dark?"#2e4a54":"#ddd"}; border-radius:6px; padding:20px 24px; z-index:99; min-width:200px; box-shadow:${dark?"0 4px 16px rgba(0,0,0,0.3)":"0 2px 12px rgba(0,0,0,0.1)"}; animation:fadeIn 0.15s ease; }
@@ -152,6 +154,7 @@ const makeStyles = (dark) => `
     .btn-next:hover { border-color:${dark?"#2e4a54":"#ccc"}; color:${dark?"#5a8890":"#888"}; }
     .btn-secondary:hover { border-color:${dark?"#3a5e6a":"#bbb"}; color:${dark?"#777":"#444"}; }
     .settings-btn:hover { border-color:${dark?"#3a5e6a":"#ccc"}; color:${dark?"#7ab0b8":"#666"}; }
+    .back-btn:hover { border-color:${dark?"#3a5e6a":"#ddd"}; color:${dark?"#7ab0b8":"#666"}; }
   }
 `;
 
@@ -192,9 +195,9 @@ function HomePage({ onStart, hallOfFame, loading }) {
   return (
     <div className="card">
       <div className="home-title">QUIZ<br/>AMANN</div>
-      <div className="home-sub">Culture générale — 30 questions</div>
+      <div className="home-sub">Culture générale — 15 questions</div>
       <div className="home-rules">
-        <div className="rule-item"><strong>30</strong>Questions aléatoires</div>
+        <div className="rule-item"><strong>15</strong>Questions aléatoires</div>
         <div className="rule-item"><strong>15s</strong>Par question</div>
         <div className="rule-item"><strong>1–3</strong>Points par bonne réponse</div>
         <div className="rule-item"><strong>+1</strong>Bonus de rapidité</div>
@@ -443,6 +446,7 @@ function App() {
     <>
       <style>{makeStyles(dark)}</style>
       <div className="app" onClick={() => settingsOpen && setSettings(false)}>
+        <a className="back-btn" href="https://didoune.com" title="Retour à Didoune.com">← Didoune.com</a>
         <button className="settings-btn" onClick={e=>{e.stopPropagation();setSettings(o=>!o)}} title="Réglages">⚙</button>
         {settingsOpen && <SettingsPanel dark={dark} onToggleDark={toggleDark} onResetSeen={() => { try { localStorage.removeItem(SEEN_KEY); } catch {} }} />}
 
@@ -454,7 +458,7 @@ function App() {
   );
 }
 
-// ─── FALLBACK (30 questions embarquées si questions.json non accessible) ─────
+// ─── FALLBACK (questions embarquées si questions.json non accessible) ─────
 const FALLBACK_DB = [
   {id:56,categorie:"Histoire",difficulte:"facile",points:1,question:"Qui était le premier président de la Ve République française ?",reponses:["Charles de Gaulle","Georges Pompidou","François Mitterrand","Valéry Giscard d'Estaing"],bonne:"A",explication:""},
   {id:57,categorie:"Histoire",difficulte:"facile",points:1,question:"En quelle année a eu lieu la Révolution française ?",reponses:["1776","1789","1799","1804"],bonne:"B",explication:""},
