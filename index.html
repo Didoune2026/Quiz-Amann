@@ -16,7 +16,7 @@ const { useState, useEffect, useRef, useCallback } = React;
 
 const TIMER_MAX = 15;
 const LETTERS   = ["A","B","C","D"];
-const PICK = { facile: 4, moyen: 7, difficile: 4 };
+const PICK = { facile: 8, moyen: 14, difficile: 8 };
 const SEEN_KEY  = "quiz_seen";
 
 function pickQuestions(db) {
@@ -57,8 +57,6 @@ const makeStyles = (dark) => `
   .app { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 16px; }
   .card { width:100%; max-width:680px; background:${dark?"#233840":"#fffdf7"}; border:1.5px solid ${dark?"#2e4a54":"#ddd5c0"}; border-radius:6px; padding:40px; box-shadow:${dark?"0 4px 24px rgba(0,0,0,0.4)":"0 2px 20px rgba(38,70,83,0.1)"}; transition:background 0.3s,border-color 0.3s; }
 
-  .back-btn { position:fixed; top:16px; left:16px; height:36px; padding:0 14px; background:${dark?"#233840":"#fff"}; border:1.5px solid ${dark?"#3a5e6a":"#ddd"}; border-radius:18px; display:flex; align-items:center; gap:6px; cursor:pointer; z-index:100; color:${dark?"#7ab0b8":"#666"}; font-size:13px; font-family:'DM Sans',sans-serif; font-weight:500; text-decoration:none; transition:all 0.15s; }
-  .back-btn:hover { border-color:#e76f51; color:#e76f51; }
   .settings-btn { position:fixed; top:16px; right:16px; width:40px; height:40px; background:${dark?"#2e4a54":"#fff"}; border:1.5px solid ${dark?"#3a5e6a":"#ccc"}; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:100; color:${dark?"#7ab0b8":"#666"}; font-size:18px; transition:all 0.15s; }
   .settings-btn:hover { border-color:#c8432a; color:#c8432a; }
   .settings-panel { position:fixed; top:64px; right:16px; background:${dark?"#233840":"#fff"}; border:1.5px solid ${dark?"#2e4a54":"#ddd"}; border-radius:6px; padding:20px 24px; z-index:99; min-width:200px; box-shadow:${dark?"0 4px 16px rgba(0,0,0,0.3)":"0 2px 12px rgba(0,0,0,0.1)"}; animation:fadeIn 0.15s ease; }
@@ -109,8 +107,9 @@ const makeStyles = (dark) => `
   .feedback-bar.correct { background:${dark?"#0e2828":"#e8f5f3"}; color:${dark?"#5ec4b8":"#1a4a42"}; border:1.5px solid #3a9a6e; }
   .feedback-bar.wrong   { background:${dark?"#2e1c18":"#faf0ee"}; color:${dark?"#e07060":"#a83a28"}; border:1.5px solid #c8432a; }
   .feedback-bar.timeout { background:${dark?"#252010":"#fdf5e0"}; color:${dark?"#e9c46a":"#b07800"}; border:1.5px solid #f0a800; }
-  .btn-next { margin-top:10px; width:100%; padding:12px; background:transparent; color:${dark?"#5a8890":"#888"}; font-family:'DM Sans',sans-serif; font-size:14px; font-weight:600; border:1.5px solid ${dark?"#2e4a54":"#ccc"}; border-radius:4px; cursor:pointer; transition:all 0.12s; letter-spacing:0.5px; }
-  .btn-next:hover { border-color:#c8432a; color:#c8432a; }
+  .explication-block { margin-top:14px; padding:14px 16px; border-radius:4px; font-size:13px; line-height:1.55; color:${dark?"#7ab0b8":"#5a6a60"}; background:${dark?"#1a3038":"#eef5f3"}; border:1.5px solid ${dark?"#2a4a54":"#c0ddd8"}; border-left:4px solid #2a9d8f; animation:fadeIn 0.3s ease; font-style:italic; }
+  .btn-next { margin-top:12px; width:100%; padding:13px; background:#e76f51; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:18px; letter-spacing:2px; border:none; border-radius:4px; cursor:pointer; transition:all 0.12s; box-shadow:${dark?"0 2px 10px rgba(231,111,81,0.3)":"0 2px 8px rgba(231,111,81,0.2)"}; }
+  .btn-next:hover { background:#f47f61; box-shadow:${dark?"0 3px 14px rgba(231,111,81,0.4)":"0 3px 10px rgba(231,111,81,0.25)"}; }
 
   @keyframes fadeIn { from{opacity:0;transform:translateY(4px)} to{opacity:1;transform:translateY(0)} }
 
@@ -151,10 +150,9 @@ const makeStyles = (dark) => `
   @media (hover: none) {
     .answer-btn:not(.disabled):hover { background:${dark?"#1a2e38":"#f5f0e8"}; border-color:${dark?"#2e4a54":"#ccc"}; color:${dark?"#e8f0f0":"#222"}; }
     .btn-primary:hover { transform:none; box-shadow:${dark?"0 2px 12px rgba(231,111,81,0.35)":"0 2px 8px rgba(231,111,81,0.25)"}; }
-    .btn-next:hover { border-color:${dark?"#2e4a54":"#ccc"}; color:${dark?"#5a8890":"#888"}; }
+    .btn-next:hover { background:#e76f51; }
     .btn-secondary:hover { border-color:${dark?"#3a5e6a":"#bbb"}; color:${dark?"#777":"#444"}; }
     .settings-btn:hover { border-color:${dark?"#3a5e6a":"#ccc"}; color:${dark?"#7ab0b8":"#666"}; }
-    .back-btn:hover { border-color:${dark?"#3a5e6a":"#ddd"}; color:${dark?"#7ab0b8":"#666"}; }
   }
 `;
 
@@ -195,9 +193,9 @@ function HomePage({ onStart, hallOfFame, loading }) {
   return (
     <div className="card">
       <div className="home-title">QUIZ<br/>AMANN</div>
-      <div className="home-sub">Culture générale — 15 questions</div>
+      <div className="home-sub">Culture générale — 30 questions</div>
       <div className="home-rules">
-        <div className="rule-item"><strong>15</strong>Questions aléatoires</div>
+        <div className="rule-item"><strong>30</strong>Questions aléatoires</div>
         <div className="rule-item"><strong>15s</strong>Par question</div>
         <div className="rule-item"><strong>1–3</strong>Points par bonne réponse</div>
         <div className="rule-item"><strong>+1</strong>Bonus de rapidité</div>
@@ -244,10 +242,6 @@ function QuizPage({ questions, onFinish }) {
     setResults(nr);
     const ns = Math.round((score+earned)*100)/100;
     setScore(ns);
-    // Le passage à la question suivante se fait via le bouton Suivante (ou auto après 5s)
-    timerRef.current = setTimeout(() => {
-      goNext(nr, ns);
-    }, 5000);
   }, [answered, q, results, current, questions.length, onFinish, score]);
 
   const goNext = useCallback((nr, ns) => {
@@ -312,6 +306,9 @@ function QuizPage({ questions, onFinish }) {
           <div className={`feedback-bar ${answered.isTimeout?"timeout":answered.correct?"correct":"wrong"}`}>
             {answered.isTimeout ? "Temps écoulé !" : answered.correct ? `+${answered.earned.toFixed(2)} pts` : `Raté — la réponse était ${q.bonne}`}
           </div>
+          {q.explication && q.explication.trim() !== "" && (
+            <div className="explication-block">{q.explication}</div>
+          )}
           <button className="btn-next" onClick={() => goNext()}>
             {current+1 >= questions.length ? "Voir les résultats →" : "Question suivante →"}
           </button>
@@ -446,7 +443,6 @@ function App() {
     <>
       <style>{makeStyles(dark)}</style>
       <div className="app" onClick={() => settingsOpen && setSettings(false)}>
-        <a className="back-btn" href="https://didoune.com" title="Retour à Didoune.com">← Didoune.com</a>
         <button className="settings-btn" onClick={e=>{e.stopPropagation();setSettings(o=>!o)}} title="Réglages">⚙</button>
         {settingsOpen && <SettingsPanel dark={dark} onToggleDark={toggleDark} onResetSeen={() => { try { localStorage.removeItem(SEEN_KEY); } catch {} }} />}
 
@@ -458,7 +454,7 @@ function App() {
   );
 }
 
-// ─── FALLBACK (questions embarquées si questions.json non accessible) ─────
+// ─── FALLBACK (30 questions embarquées si questions.json non accessible) ─────
 const FALLBACK_DB = [
   {id:56,categorie:"Histoire",difficulte:"facile",points:1,question:"Qui était le premier président de la Ve République française ?",reponses:["Charles de Gaulle","Georges Pompidou","François Mitterrand","Valéry Giscard d'Estaing"],bonne:"A",explication:""},
   {id:57,categorie:"Histoire",difficulte:"facile",points:1,question:"En quelle année a eu lieu la Révolution française ?",reponses:["1776","1789","1799","1804"],bonne:"B",explication:""},
