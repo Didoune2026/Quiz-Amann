@@ -6,7 +6,7 @@
   <title>Quiz Amann</title>
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.12.17/babel.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel" data-plugins="transform-react-jsx">
+  <script type="text/babel" data-presets="react">
 const { useState, useEffect, useRef, useCallback } = React;
 
 const TIMER_MAX = 15;
@@ -146,6 +146,8 @@ const makeStyles = (dark) => `
   .hof-empty { font-size:13px; color:${dark?"#3a6070":"#bbb"}; padding:20px 0; text-align:center; font-style:italic; }
 
   .result-actions { display:flex; gap:10px; margin-top:32px; }
+  .btn-zap { margin-top:12px; padding:6px 14px; background:transparent; color:${dark?"#3a6070":"#ccc"}; font-family:'DM Sans',sans-serif; font-size:11px; font-weight:600; letter-spacing:1px; border:1px solid ${dark?"#2e4a54":"#e0ddd8"}; border-radius:3px; cursor:pointer; transition:all 0.15s; }
+  .btn-zap:hover { border-color:#e76f51; color:#e76f51; }
   .progress-dots { display:flex; gap:5px; margin-bottom:20px; flex-wrap:wrap; }
   .dot { width:9px; height:9px; border-radius:50%; background:${dark?"#1a2e38":"#ddd5c0"}; transition:background 0.3s; border:1px solid ${dark?"#2e4a54":"#ccc"}; }
   .dot.correct{background:#2a9d8f;border-color:#2a9d8f} .dot.wrong{background:#e76f51;border-color:#c8432a} .dot.active{background:#d09030;border-color:#d09030}
@@ -323,7 +325,7 @@ function QuizPage({ questions, onFinish }) {
   );
 }
 
-function ResultPage({ results, finalScore, hallOfFame, onSaveHof, onRestart }) {
+function ResultPage({ results, finalScore, hallOfFame, onSaveHof, onRestart, onResetHof }) {
   const [pseudo, setPseudo] = useState("");
   const [saved, setSaved]   = useState(false);
   const correct = results.filter(r=>r.correct).length;
@@ -371,6 +373,12 @@ function ResultPage({ results, finalScore, hallOfFame, onSaveHof, onRestart }) {
       </div>
       <div className="result-actions">
         <button className="btn-primary" onClick={onRestart}>REJOUER</button>
+      </div>
+      <div style={{textAlign:"center",marginTop:"16px"}}>
+        <button className="btn-zap" onClick={() => {
+          try { localStorage.removeItem("quiz_hof"); } catch {}
+          onResetHof();
+        }}>ZAP</button>
       </div>
     </div>
   );
@@ -454,7 +462,7 @@ function App() {
 
         {screen==="home" && <HomePage onStart={startQuiz} hallOfFame={hallOfFame} loading={dbLoading} />}
         {screen==="quiz" && <QuizPage key={questions[0] && questions[0].id} questions={questions} onFinish={(r,s)=>{setResults(r);setFinalScore(s);setScreen("result");}} />}
-        {screen==="result" && <ResultPage results={quizResults} finalScore={finalScore} hallOfFame={hallOfFame} onSaveHof={saveHoF} onRestart={startQuiz} />}
+        {screen==="result" && <ResultPage results={quizResults} finalScore={finalScore} hallOfFame={hallOfFame} onSaveHof={saveHoF} onRestart={startQuiz} onResetHof={() => setHoF([])} />}
       </div>
     </>
   );
