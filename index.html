@@ -7,11 +7,14 @@
   <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>* { box-sizing: border-box; margin: 0; padding: 0; } body { min-height: 100vh; } #root { min-height: 100vh; }</style>
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel" data-presets="react">
+  <script type="text/babel" data-plugins="transform-react-jsx">
 const { useState, useEffect, useRef, useCallback } = React;
 
 const TIMER_MAX = 15;
@@ -51,7 +54,6 @@ function calcScore(points, timeLeft) {
 }
 
 const makeStyles = (dark) => `
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: ${dark?"#1a2e38":"#f5f0e8"}; color: ${dark?"#e8f0f0":"#1a1a1a"}; font-family:'DM Sans',sans-serif; min-height:100vh; transition:background 0.3s,color 0.3s; }
   .app { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 16px; }
