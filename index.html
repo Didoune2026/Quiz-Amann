@@ -278,7 +278,7 @@ function QuizPage({ questions, onFinish }) {
       </div>
       <div className="progress-dots">
         {questions.map((_,i) => (
-          <div key={i} className={`dot ${i<current?(results[i]?.correct?"correct":"wrong"):i===current?"active":""}`} />
+          <div key={i} className={`dot ${i<current?((results[i]&&results[i].correct)?"correct":"wrong"):i===current?"active":""}`} />
         ))}
       </div>
       <div style={{display:"flex",justifyContent:"flex-end"}}>
@@ -451,7 +451,7 @@ function App() {
         {settingsOpen && <SettingsPanel dark={dark} onToggleDark={toggleDark} onResetSeen={() => { try { localStorage.removeItem(SEEN_KEY); } catch {} }} />}
 
         {screen==="home" && <HomePage onStart={startQuiz} hallOfFame={hallOfFame} loading={dbLoading} />}
-        {screen==="quiz" && <QuizPage key={questions[0]?.id} questions={questions} onFinish={(r,s)=>{setResults(r);setFinalScore(s);setScreen("result");}} />}
+        {screen==="quiz" && <QuizPage key={questions[0] && questions[0].id} questions={questions} onFinish={(r,s)=>{setResults(r);setFinalScore(s);setScreen("result");}} />}
         {screen==="result" && <ResultPage results={quizResults} finalScore={finalScore} hallOfFame={hallOfFame} onSaveHof={saveHoF} onRestart={startQuiz} />}
       </div>
     </>
